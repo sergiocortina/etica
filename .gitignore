@@ -1,0 +1,3 @@
+# Ignorar archivos que no van en GitHub Pages
+*.pdf
+_trabajo/
