@@ -1,0 +1,732 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.1, maximum-scale=5.0, user-scalable=yes">
+    <title>Unidad 3 — La Ética en diversos contextos</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/black.css" id="theme">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/highlight/monokai.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        :root{--r-background-color:#0a0a1a;--r-main-font:'Inter',sans-serif;--r-heading-font:'Playfair Display',serif;--r-main-font-size:24px;--accent-blue:#4f8cff;--accent-purple:#a855f7;--accent-pink:#ec4899;--accent-green:#10b981;--accent-gold:#f59e0b;--accent-orange:#f97316;--accent-red:#ef4444;--accent-emerald:#34d399;--glass:rgba(255,255,255,.06);--glass-border:rgba(255,255,255,.1)}
+        .reveal{font-family:var(--r-main-font)}.reveal .slides{text-align:left}
+        .reveal .slides section{padding:20px 40px;overflow:hidden;box-sizing:border-box}
+        .reveal .slides section *{max-width:100%;box-sizing:border-box}
+        .reveal .slides p,.reveal .slides li,.reveal .slides h1,.reveal .slides h2,.reveal .slides h3,.reveal .slides h4{overflow-wrap:break-word;word-wrap:break-word;hyphens:auto;margin-right:0;padding-right:0}
+        .reveal .slides section.title-slide{text-align:center;background:linear-gradient(135deg,#0a0a1a 0%,#0f1a3a 50%,#1a2a4a 100%)}
+        .reveal .slides section.title-slide h1{font-family:'Playfair Display',serif;font-size:2.4em;font-weight:900;background:linear-gradient(135deg,#4f8cff,#a855f7,#ec4899);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1.2;margin-bottom:16px}
+        .reveal .slides section.title-slide .subtitle{font-size:1em;color:rgba(255,255,255,.6);font-weight:300;letter-spacing:2px}
+        .reveal .slides section.title-slide .unit-badge{display:inline-block;background:linear-gradient(135deg,var(--accent-blue),var(--accent-purple));color:white;padding:8px 24px;border-radius:30px;font-size:.7em;font-weight:600;letter-spacing:3px;text-transform:uppercase;margin-top:30px}
+        .reveal .slides section.section-header{text-align:center;background:linear-gradient(135deg,#0a0a1a 0%,#0f1a3a 50%,#1a2a4a 100%)}
+        .reveal .slides section.section-header h2{font-family:'Playfair Display',serif;font-size:2em;font-weight:800;background:linear-gradient(135deg,#4f8cff,#a855f7);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:16px}
+        .reveal .slides section.section-header .section-icon{font-size:2.5em;margin-bottom:14px;display:block}
+        .card{background:var(--glass);border:1px solid var(--glass-border);border-radius:14px;padding:14px 16px;margin:8px 0;backdrop-filter:blur(10px);overflow:hidden;box-sizing:border-box}
+        .card p,.card li,.card h4{overflow-wrap:break-word;word-wrap:break-word;hyphens:auto;font-size:.85em}
+        .card-accent-blue{border-left:4px solid var(--accent-blue)}.card-accent-purple{border-left:4px solid var(--accent-purple)}.card-accent-pink{border-left:4px solid var(--accent-pink)}.card-accent-green{border-left:4px solid var(--accent-green)}.card-accent-gold{border-left:4px solid var(--accent-gold)}.card-accent-orange{border-left:4px solid var(--accent-orange)}.card-accent-red{border-left:4px solid var(--accent-red)}.card-accent-emerald{border-left:4px solid var(--accent-emerald)}
+        .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:14px}.grid-3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-top:14px}.grid-2>.card,.grid-3>.card{margin:0;min-width:0}
+        .reveal h1,.reveal h2,.reveal h3,.reveal h4{color:white;font-weight:700}.reveal h2{font-size:1.4em;margin-bottom:14px}.reveal h3{font-size:1.05em;color:var(--accent-blue);margin-bottom:8px}.reveal h4{font-size:.9em;color:var(--accent-gold)}
+        .reveal p,.reveal li{color:rgba(255,255,255,.85);line-height:1.6}.reveal ul{list-style:none;padding-left:0}.reveal ul li{padding:3px 0;padding-left:24px;position:relative}.reveal ul li::before{content:'\25B8';position:absolute;left:0;color:var(--accent-blue);font-weight:700}
+        .highlight{color:var(--accent-blue);font-weight:600}.highlight-gold{color:var(--accent-gold);font-weight:600}.highlight-purple{color:var(--accent-purple);font-weight:600}.highlight-pink{color:var(--accent-pink);font-weight:600}.highlight-green{color:var(--accent-green);font-weight:600}
+        .icon-lg{font-size:1.6em;display:inline-block;margin-right:6px;vertical-align:middle}.icon-xl{font-size:3em;display:block;text-align:center;margin-bottom:16px}
+        .definition-box{background:linear-gradient(135deg,rgba(79,140,255,.15),rgba(168,85,247,.15));border:1px solid rgba(79,140,255,.3);border-radius:14px;padding:16px 20px;margin:14px 0;position:relative}.definition-box::before{content:'\1F4D6';font-size:1.5em;position:absolute;top:-12px;left:20px}.definition-box .def-title{font-size:.65em;text-transform:uppercase;letter-spacing:2px;color:var(--accent-blue);font-weight:700;margin-bottom:6px}.definition-box .def-text{font-size:.85em;color:rgba(255,255,255,.9);line-height:1.5}
+        .comparison-table{width:100%;border-collapse:separate;border-spacing:0;border-radius:10px;overflow:hidden;font-size:.65em;margin-top:12px}.comparison-table th{background:linear-gradient(135deg,var(--accent-blue),var(--accent-purple));color:white;padding:8px 12px;text-align:left;font-weight:600}.comparison-table td{padding:7px 12px;border-bottom:1px solid var(--glass-border);color:rgba(255,255,255,.85)}.comparison-table tr:nth-child(even) td{background:var(--glass)}.comparison-table tr:last-child td{border-bottom:none}
+        .fun-fact{background:linear-gradient(135deg,rgba(245,158,11,.15),rgba(239,68,68,.1));border:1px solid rgba(245,158,11,.3);border-radius:10px;padding:12px 16px;margin:10px 0;font-size:.85em}.fun-fact .ff-label{color:var(--accent-gold);font-weight:700;font-size:.7em;text-transform:uppercase;letter-spacing:1px}
+        .quote-box{background:var(--glass);border-left:4px solid var(--accent-gold);border-radius:0 12px 12px 0;padding:14px 18px;margin:10px 0;position:relative}.quote-box::before{content:'\201C';font-size:3em;color:var(--accent-gold);position:absolute;top:-10px;left:10px;opacity:.3;font-family:serif}.quote-box .quote-text{font-style:italic;font-size:.85em;color:rgba(255,255,255,.9);padding-left:30px;line-height:1.5}.quote-box .quote-author{font-size:.75em;color:var(--accent-gold);text-align:right;margin-top:8px;font-weight:600}
+        .real-life{background:linear-gradient(135deg,rgba(236,72,153,.15),rgba(168,85,247,.15));border:1px solid rgba(236,72,153,.3);border-radius:12px;padding:14px 18px;margin:10px 0}.real-life .rl-label{color:var(--accent-pink);font-weight:700;font-size:.65em;text-transform:uppercase;letter-spacing:2px;margin-bottom:6px}
+        .reveal .slides section{overflow-y:auto;max-height:100%;padding-bottom:40px}.reveal .slides section::-webkit-scrollbar{width:6px}.reveal .slides section::-webkit-scrollbar-track{background:rgba(255,255,255,.05);border-radius:3px}.reveal .slides section::-webkit-scrollbar-thumb{background:rgba(79,140,255,.4);border-radius:3px}.reveal .slides section::-webkit-scrollbar-thumb:hover{background:rgba(79,140,255,.6)}
+        .reveal .slides section .fragment.visible{opacity:1}.reveal .slide-number{display:none!important}
+        .slide-nav{position:fixed;bottom:16px;left:16px;z-index:9999;height:38px;padding:0 16px;display:flex;align-items:center;justify-content:center;border-radius:20px;border:1px solid var(--glass-border);background:rgba(10,10,26,.7);backdrop-filter:blur(10px);color:rgba(255,255,255,.7);font-family:'Consolas',monospace;font-size:.9em;font-weight:600;letter-spacing:1px;cursor:pointer;transition:all .3s ease;box-shadow:0 4px 16px rgba(0,0,0,.3);user-select:none;-webkit-user-select:none}.slide-nav:hover{border-color:var(--accent-blue);color:white}.slide-nav .slide-nav-display{display:flex;align-items:center;gap:4px}.slide-nav .slide-nav-current{color:var(--accent-blue)}.slide-nav .slide-nav-sep{color:rgba(255,255,255,.3);margin:0 2px}.slide-nav .slide-nav-input{display:none;width:50px;background:transparent;border:none;border-bottom:2px solid var(--accent-blue);color:var(--accent-blue);font-family:'Consolas',monospace;font-size:1em;font-weight:700;text-align:center;outline:none;padding:2px 0;-moz-appearance:textfield}.slide-nav .slide-nav-input::-webkit-outer-spin-button,.slide-nav .slide-nav-input::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}.slide-nav.editing .slide-nav-display{display:none}.slide-nav.editing .slide-nav-input{display:inline-block}
+        .fullscreen-btn,.index-btn{position:fixed;top:16px;z-index:9999;width:48px;height:48px;border-radius:50%;border:1px solid var(--glass-border);background:rgba(10,10,26,.65);backdrop-filter:blur(10px);color:rgba(255,255,255,.85);font-size:1.1em;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .3s ease;-webkit-tap-highlight-color:transparent;box-shadow:0 4px 16px rgba(0,0,0,.3)}.fullscreen-btn{right:16px}.index-btn{right:76px}.fullscreen-btn:hover,.fullscreen-btn:active,.index-btn:hover,.index-btn:active{border-color:var(--accent-blue);background:rgba(79,140,255,.25);color:white;transform:scale(1.05)}
+        .nav-arrow{position:fixed;top:50%;z-index:9999;width:48px;height:48px;border-radius:50%;border:1px solid var(--glass-border);background:rgba(10,10,26,.65);backdrop-filter:blur(10px);color:rgba(255,255,255,.85);font-size:1.2em;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .3s ease;-webkit-tap-highlight-color:transparent;box-shadow:0 4px 16px rgba(0,0,0,.3);transform:translateY(-50%)}.nav-arrow-prev{left:16px}.nav-arrow-next{right:16px}.nav-arrow:hover{border-color:var(--accent-blue);background:rgba(79,140,255,.25);color:white;transform:translateY(-50%) scale(1.05)}
+        .fragment-counter{position:fixed;top:22px;right:142px;z-index:9999;height:38px;padding:0 14px;display:none;align-items:center;justify-content:center;border-radius:20px;border:1px solid var(--glass-border);background:rgba(10,10,26,.65);backdrop-filter:blur(10px);color:rgba(255,255,255,.9);font-family:'Consolas',monospace;font-size:.85em;font-weight:700;letter-spacing:1px;box-shadow:0 4px 16px rgba(0,0,0,.3);white-space:nowrap}.fragment-counter.has-fragments{display:flex}.fragment-counter .fc-current{color:var(--accent-blue)}
+        @media(max-width:768px){.grid-2,.grid-3{grid-template-columns:1fr}.reveal .slides section{padding:20px 30px}}
+        .glow-text{text-shadow:0 0 20px rgba(79,140,255,.5),0 0 40px rgba(168,85,247,.3)}.fade-in{animation:fadeIn .8s ease-out}@keyframes fadeIn{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+    </style>
+</head>
+<body>
+    <div class="fragment-counter" id="fragment-counter" title="Elementos de la diapositiva (mostrados/total)"><span class="fc-current">0</span>/<span class="fc-total">0</span></div>
+    <button class="nav-arrow nav-arrow-prev" id="nav-prev" title="Diapositiva anterior" aria-label="Diapositiva anterior"><i class="fa-solid fa-chevron-left"></i></button>
+    <button class="nav-arrow nav-arrow-next" id="nav-next" title="Diapositiva siguiente" aria-label="Diapositiva siguiente"><i class="fa-solid fa-chevron-right"></i></button>
+    <button class="index-btn" id="index-btn" title="Ir al índice de la unidad" aria-label="Ir al índice de la unidad"><i class="fa-solid fa-list-ul"></i></button>
+    <button class="fullscreen-btn" id="fullscreen-btn" title="Pantalla completa" aria-label="Pantalla completa"><i class="fa-solid fa-expand"></i></button>
+    <div class="slide-nav" id="slide-nav" title="Clic para ir a una diapositiva"><div class="slide-nav-display"><span class="slide-nav-current" id="slide-nav-current">1</span><span class="slide-nav-sep">/</span><span id="slide-nav-total">1</span></div><input type="number" class="slide-nav-input" id="slide-nav-input" min="1" placeholder=""></div>
+    <div class="reveal"><div class="slides">
+
+            <!-- ========== PORTADA ========== -->
+            <section class="title-slide" data-background-gradient="linear-gradient(135deg, #0a0a1a 0%, #0f1a3a 50%, #1a2a4a 100%)">
+                <span class="unit-badge">Unidad 3</span>
+                <h1 style="margin-top: 30px;">La Ética en diversos contextos</h1>
+                <p class="subtitle">Ética y Valores I — Bloque 3 — Guía completa</p>
+                <div style="margin-top:30px;">
+                    <a href="unidad-02-axiologia-y-etica.html" style="text-decoration:none;"><span class="unit-badge" style="cursor:pointer;background:rgba(255,255,255,.1);">Volver a Unidad 2</span></a>
+                </div>
+                <p style="color:rgba(255,255,255,.4);font-size:.7em;margin-top:40px;">
+                    <i class="fa-solid fa-user-tie"></i> Lic. Rosalba Sosa Guízar<br>
+                    <i class="fa-solid fa-building-columns"></i> Instituto Leonardo Bravo
+                </p>
+            </section>
+
+            <!-- ========== ÍNDICE ========== -->
+            <section id="indice" data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">📋</span> Índice de la Unidad</h2>
+                <div class="grid-2" style="font-size:.72em;">
+                    <div>
+                        <a href="#/sec-bloque" style="text-decoration:none;"><div class="card card-accent-emerald" style="padding:7px 12px;margin:4px 0;cursor:pointer;"><i class="fa-solid fa-circle" style="font-size:.5em;vertical-align:middle;margin-right:6px;"></i> Presentación del Bloque 3</div></a>
+                        <a href="#/sec-normas" style="text-decoration:none;"><div class="card card-accent-blue" style="padding:7px 12px;margin:4px 0;cursor:pointer;"><i class="fa-solid fa-circle" style="font-size:.5em;vertical-align:middle;margin-right:6px;"></i> Tipos de normas</div></a>
+                        <a href="#/sec-individual" style="text-decoration:none;"><div class="card card-accent-purple" style="padding:7px 12px;margin:4px 0;cursor:pointer;"><i class="fa-solid fa-circle" style="font-size:.5em;vertical-align:middle;margin-right:6px;"></i> Contexto individual</div></a>
+                        <a href="#/sec-juventud" style="text-decoration:none;"><div class="card card-accent-orange" style="padding:7px 12px;margin:4px 0;cursor:pointer;"><i class="fa-solid fa-circle" style="font-size:.5em;vertical-align:middle;margin-right:6px;"></i> Juventud, sexualidad y salud</div></a>
+                    </div>
+                    <div>
+                        <a href="#/sec-familia" style="text-decoration:none;"><div class="card card-accent-green" style="padding:7px 12px;margin:4px 0;cursor:pointer;"><i class="fa-solid fa-circle" style="font-size:.5em;vertical-align:middle;margin-right:6px;"></i> Contexto familiar</div></a>
+                        <a href="#/sec-social" style="text-decoration:none;"><div class="card card-accent-gold" style="padding:7px 12px;margin:4px 0;cursor:pointer;"><i class="fa-solid fa-circle" style="font-size:.5em;vertical-align:middle;margin-right:6px;"></i> Contexto social</div></a>
+                        <a href="#/sec-genero" style="text-decoration:none;"><div class="card card-accent-red" style="padding:7px 12px;margin:4px 0;cursor:pointer;"><i class="fa-solid fa-circle" style="font-size:.5em;vertical-align:middle;margin-right:6px;"></i> Género, violencia y desigualdad</div></a>
+                        <a href="#/sec-cierre" style="text-decoration:none;"><div class="card card-accent-emerald" style="padding:7px 12px;margin:4px 0;cursor:pointer;"><i class="fa-solid fa-circle" style="font-size:.5em;vertical-align:middle;margin-right:6px;"></i> Síntesis y cierre</div></a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ============================================================ -->
+            <!-- SECCIÓN 0: PRESENTACIÓN DEL BLOQUE -->
+            <!-- ============================================================ -->
+            <section class="section-header" id="sec-bloque">
+                <span class="section-icon">📘</span>
+                <h2>Presentación del Bloque 3</h2>
+                <p style="color:rgba(255,255,255,.5);">La Ética en diversos contextos</p>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🗺️</span> Organización del Bloque 3</h2>
+                <div class="definition-box"><div class="def-title">Tema central</div><div class="def-text">Durante el desarrollo del bloque se muestra la <strong>postura respecto al problema que aborda la ética</strong> en tres grandes contextos de la vida humana.</div></div>
+                <div class="grid-3 fragment" style="margin-top:16px;">
+                    <div class="card card-accent-purple" style="text-align:center;"><div style="font-size:1.6em;">🪞</div><h4 style="color:var(--accent-purple);font-size:.82em;">Contexto individual</h4><p style="font-size:.7em;">El cuidado de sí, la autonomía, la libertad y la responsabilidad</p></div>
+                    <div class="card card-accent-green" style="text-align:center;"><div style="font-size:1.6em;">🏠</div><h4 style="color:var(--accent-green);font-size:.82em;">Contexto familiar</h4><p style="font-size:.7em;">Función ética de la familia, usos y costumbres, violencia familiar</p></div>
+                    <div class="card card-accent-gold" style="text-align:center;"><div style="font-size:1.6em;">🌐</div><h4 style="color:var(--accent-gold);font-size:.82em;">Contexto social</h4><p style="font-size:.7em;">Identidades culturales, género, desigualdad y convivencia</p></div>
+                </div>
+                <p class="fragment" style="font-size:.8em;margin-top:14px;text-align:center;color:rgba(255,255,255,.65);">Además: los <span class="highlight-blue">tipos de normas</span> que regulan la conducta en cada uno de ellos.</p>
+            </section>
+            <!-- ============================================================ -->
+            <!-- SECCIÓN: TIPOS DE NORMAS -->
+            <!-- ============================================================ -->
+            <section class="section-header" id="sec-normas">
+                <span class="section-icon">📏</span>
+                <h2>Tipos de normas</h2>
+                <p style="color:rgba(255,255,255,.5);">Social, jurídica, religiosa y moral</p>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">📜</span> Origen y función de las normas</h2>
+                <div class="card card-accent-blue"><p style="font-size:.84em;">La sociedad ha tenido la necesidad de que las personas tengan una <strong>guía en su vida</strong>: desde la época prehispánica existen ciertas normas.</p></div>
+                <div class="grid-2 fragment" style="margin-top:12px;">
+                    <div class="card card-accent-green"><h4 style="color:var(--accent-green);">Ventajas</h4><ul style="font-size:.76em;"><li>Son válidas para cualquier sujeto</li><li>Logran cierta <strong>justicia</strong>: si se aplica parejo, nadie se queja de preferencias</li></ul></div>
+                    <div class="card card-accent-gold"><h4 style="color:var(--accent-gold);">Ejemplo</h4><p style="font-size:.76em;">Un joven que bromea en la biblioteca por celular: todos le recordarán que la norma allí es <strong>guardar silencio</strong>.</p></div>
+                </div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">📏</span> ¿Qué es una norma?</h2>
+                <div class="definition-box"><div class="def-title">Norma</div><div class="def-text">Mandato sobre el comportamiento que se considera <strong>aceptable para la vida social normal</strong>. De alguna manera, indica qué se espera de los miembros de una comunidad.</div></div>
+                <div class="card card-accent-purple fragment" style="margin-top:12px;"><h4 style="color:var(--accent-purple);">Función fundamental</h4><p style="font-size:.82em;">Ejercen una <strong>presión sobre el individuo</strong> para que este se ajuste al orden social.</p></div>
+                <div class="card card-accent-blue fragment" style="margin-top:8px;"><p style="font-size:.82em;">Existen cuatro tipos: <span class="highlight-gold">sociales</span>, <span class="highlight-green">jurídicas (legales)</span>, <span class="highlight-purple">religiosas</span> y <span class="highlight-pink">morales</span>.</p></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">👥</span> Normas sociales — definición</h2>
+                <div class="definition-box"><div class="def-title">Norma social</div><div class="def-text">Mandato aceptado por la <strong>mayoría de quienes integran una sociedad</strong>, que nos permite saber qué se espera que hagamos en la vida social. Es producto de la experiencia acumulada por siglos de vida comunitaria.</div></div>
+                <div class="card card-accent-red fragment" style="margin-top:12px;"><h4 style="color:var(--accent-red);">Si se incumple</h4><p style="font-size:.82em;">Los demás consideran que el comportamiento es contrario a las buenas formas. Ejemplo: llegar a un lugar y no saludar provoca <strong>molestia, incomodidad y hasta desconfianza</strong>. Incluso hay quien lo toma como agresión y pregunta si esa persona se siente superior.</p></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🌍</span> Normas sociales — universales</h2>
+                <div class="card card-accent-green"><p style="font-size:.82em;">Las normas sociales pueden referirse a una comunidad o cultura en particular y son un tanto relativas. Sin embargo, es curioso que haya <strong>normas similares en todas partes del mundo</strong>, porque son útiles: preservan la paz, la concordia y demuestran respeto.</p></div>
+                <div class="grid-2 fragment" style="margin-top:12px;">
+                    <div class="card card-accent-blue"><h4 style="color:var(--accent-blue);">Ejemplos universales</h4><ul style="font-size:.74em;"><li>Llegar a tiempo a una cita</li><li>No subir los codos a la mesa</li><li>No hacer ruido con la boca mientras se sorbe o come</li><li>Cubrirse la boca al estornudar o toser</li><li>No interrumpir a quien está en uso de la palabra</li><li>Ceder el lugar a las personas mayores</li></ul></div>
+                    <div class="card card-accent-gold"><h4 style="color:var(--accent-gold);">Su sentido</h4><p style="font-size:.76em;">Ser puntual se traduce como <strong>consideración</strong> hacia el tiempo de los demás. La consideración y el respeto constituyen la capacidad de socialización y la inteligencia emocional de cada persona.</p></div>
+                </div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🔄</span> Normas sociales — relativas al contexto</h2>
+                <div class="grid-2">
+                    <div class="card card-accent-purple fragment"><h4 style="color:var(--accent-purple);">Se adecuan al lugar</h4><ul style="font-size:.76em;"><li>Cine: guardar silencio</li><li>Concierto de música clásica: silencio</li><li>Concierto juvenil o de rock: bailar y corear</li></ul></div>
+                    <div class="card card-accent-orange fragment"><h4 style="color:var(--accent-orange);">Se adecuan a la cultura</h4><ul style="font-size:.76em;"><li><strong>México:</strong> si alguien estornuda, se le desea "salud" y agradece</li><li><strong>Japón:</strong> quien estornuda pide <strong>perdón</strong>, pues sus microorganismos pueden contagiar a los demás</li></ul></div>
+                </div>
+                <div class="fun-fact fragment" style="margin-top:12px;"><div class="ff-label">Clave</div><p style="font-size:.8em;">Cada persona debe tener la sensatez para decidir qué se espera de ella en cada situación: ayuda la educación, el conocimiento del lugar y la capacidad de entender la situación en que nos encontramos.</p></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">⚖️</span> Normas convencionales y rebeldía</h2>
+                <div class="grid-2">
+                    <div class="card card-accent-gold fragment"><h4 style="color:var(--accent-gold);">Convencionales</h4><p style="font-size:.8em;">Algunas normas son convencionales: su cumplimiento no es tan necesario, pero tampoco son tan sancionadas. Ejemplo: combinar los colores de la ropa. Con el paso del tiempo vamos aprendiendo qué ha funcionado y perfeccionamos las normas existentes.</p></div>
+                    <div class="card card-accent-red fragment"><h4 style="color:var(--accent-red);">Desafío a las normas</h4><p style="font-size:.8em;">Algunos las desafían como forma de expresar rebeldía: suben los pies al escritorio, hablan muy fuerte o caminan sin ceder el paso. Más que rebeldía, eso expresa <strong>falta de educación y sentido común</strong>.</p></div>
+                </div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🏛️</span> Normas jurídicas / legales</h2>
+                <div class="definition-box"><div class="def-title">Norma jurídica</div><div class="def-text">Regulación que la sociedad establece para vivir en un marco de <strong>respeto y justicia</strong>. Están basadas en <strong>leyes</strong>: regulaciones diseñadas por un grupo de legisladores para la protección del grupo social y asentadas en una normativa o ley.</div></div>
+                <div class="card card-accent-green fragment" style="margin-top:12px;"><h4 style="color:var(--accent-green);">Ejemplos</h4><ul style="font-size:.78em;"><li>"Se prohíbe fumar en este establecimiento" (Reglamento sobre el consumo de tabaco)</li><li>"Para circular de mejor manera, nos toca uno por uno"</li></ul></div>
+                <div class="card card-accent-blue fragment" style="margin-top:8px;"><p style="font-size:.8em;">Las leyes forman parte del <strong>derecho positivo</strong> y contemplan sanciones administrativas o penales si no se acatan.</p></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🔍</span> ¿Norma o ley? La diferencia</h2>
+                <div class="grid-2">
+                    <div class="card card-accent-purple fragment"><h4 style="color:var(--accent-purple);">Norma</h4><p style="font-size:.8em;">Construida socialmente; tiene un <strong>consenso mayoritario</strong> en un grupo o comunidad.</p></div>
+                    <div class="card card-accent-gold fragment"><h4 style="color:var(--accent-gold);">Ley / norma jurídica</h4><p style="font-size:.8em;">Si no se cumple, se conmina a la persona a su cumplimiento. En caso de no obtener solución, se aplica la <strong>sanción</strong> estipulada en la ley.</p></div>
+                </div>
+                <div class="fun-fact fragment" style="margin-top:12px;"><div class="ff-label">Advertencia</div><p style="font-size:.8em;">Las normas jurídicas son <strong>relativas al lugar</strong> donde se crearon. Además, suelen reflejar las conveniencias de las clases dominantes, lo cual es riesgoso: no siempre se estipulan conforme a la ética, aunque sería deseable que lo fueran.</p></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">⛪</span> Normas religiosas</h2>
+                <div class="card card-accent-purple"><p style="font-size:.84em;">Hay <strong>gran similitud</strong> entre las normas de las distintas religiones, ya que expresan una moral.</p></div>
+                <div class="grid-2 fragment" style="margin-top:12px;">
+                    <div class="card card-accent-blue"><h4 style="color:var(--accent-blue);">Ejemplos</h4><ul style="font-size:.76em;"><li>"Honrarás a tu padre y a tu madre" — la relación con Dios exige un buen comportamiento</li><li>"No mentirás"</li></ul></div>
+                    <div class="card card-accent-pink"><h4 style="color:var(--accent-pink);">Carácter interno</h4><p style="font-size:.76em;">Se refiere a acciones propias de la conciencia humana: nadie estará pendiente de que no mientas; <strong>solo tu conciencia lo garantiza</strong>. La sanción también es interna.</p></div>
+                </div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🧭</span> Normas morales — definición</h2>
+                <div class="definition-box"><div class="def-title">Norma moral</div><div class="def-text">Criterios que nos indican los comportamientos para poder vivir en una determinada sociedad con <strong>libertad, responsabilidad y dignidad</strong>, al mismo tiempo con respeto por los demás.</div></div>
+                <div class="card card-accent-green fragment" style="margin-top:12px;"><h4 style="color:var(--accent-green);">Cuando las seguimos con plena conciencia</h4><p style="font-size:.8em;">Adquirimos <strong>consistencia moral y estabilidad</strong> en nuestras vidas; eso le dará profundidad y amplitud a nuestros juicios morales para distinguir lo correcto de lo incorrecto al actuar en cada situación.</p></div>
+                <div class="card card-accent-blue fragment" style="margin-top:8px;"><p style="font-size:.8em;">Nos brindan <strong>patrones para la conducta</strong> y nos permiten abordar adecuadamente los dilemas morales y los conflictos diarios.</p></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">✍️</span> Formas de enunciar la norma moral</h2>
+                <div class="grid-3">
+                    <div class="card card-accent-green fragment" style="text-align:center;"><h4 style="color:var(--accent-green);font-size:.8em;">Positiva</h4><p style="font-size:.73em;">"Trata a los demás como te gustaría ser tratado"</p></div>
+                    <div class="card card-accent-red fragment" style="text-align:center;"><h4 style="color:var(--accent-red);font-size:.8em;">Negativa (prohibición)</h4><p style="font-size:.73em;">"No matarás"</p></div>
+                    <div class="card card-accent-blue fragment" style="text-align:center;"><h4 style="color:var(--accent-blue);font-size:.8em;">Específica</h4><p style="font-size:.73em;">"No traicionarás a un amigo"</p></div>
+                </div>
+                <div class="card card-accent-gold fragment" style="margin-top:14px;"><h4 style="color:var(--accent-gold);">Otros ejemplos</h4><p style="font-size:.8em;">"No matar", "No decir mentiras", "Mantener los secretos que nos han sido confiados", "No tomar los bienes ajenos". A veces se expresan como imperativos, otras como acciones que deben evitarse.</p></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🏛️</span> Fundamento: el imperativo categórico de Kant</h2>
+                <div class="card card-accent-purple"><p style="font-size:.84em;">Las normas morales pueden encontrar fundamento en los filósofos de la ética, por ejemplo en el <strong>imperativo categórico de Immanuel Kant</strong>, quien consideraba que el comportamiento ético se hacía en concordancia con el deber. Para Kant, las normas son órdenes de carácter obligatorio: <strong>imperativos</strong>.</p></div>
+                <div class="quote-box fragment" style="margin-top:12px;"><div class="quote-text" style="font-size:.82em;">"La ley moral se expresa a manera de imperativo categórico, que podríamos formular en palabras sencillas así: <strong>obra solo según una máxima tal que quisieras que se volviera ley universal</strong>."</div><div class="quote-author">Immanuel Kant</div></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">📊</span> Cuadro comparativo de normas</h2>
+                <table class="comparison-table">
+                    <tr><th>Tipo</th><th>Características</th><th>Sanción</th><th>Ejemplos</th></tr>
+                    <tr><td><strong>Social</strong></td><td>Relativas y externas. Regulan relaciones sociales y la capacidad de adecuarse a la vida social.</td><td>Rechazo social a quien no se comporta según los criterios aceptados.</td><td>"Sé puntual en tus citas", "No subas los codos a la mesa", "Saluda al llegar"</td></tr>
+                    <tr><td><strong>Jurídica</strong></td><td>Relativas y externas. Señalan los límites y ponen orden y justicia en el actuar.</td><td>Rechazo social y llamada de atención; si persiste, se recurre a la ley.</td><td>"Se prohíbe fumar", "Respete el lugar destinado para adultos mayores y personas embarazadas"</td></tr>
+                    <tr><td><strong>Religiosa</strong></td><td>Internas y atemporales, pues se realizan en la conciencia. Regulan ante Dios, la Iglesia y las demás personas.</td><td>Interna: culpa, malestar interno y sensación de pérdida.</td><td>"Amarás a tu Dios en tu prójimo", "No jurarás en vano, ni mentirás"</td></tr>
+                    <tr><td><strong>Moral</strong></td><td>Internas y relativas. Se basan en la dignidad y el respeto. Regulan lo bueno y lo malo de las acciones.</td><td>Interna: en la conciencia. Malestar, sentimiento de culpa.</td><td>"No matarás", "No dirás mentiras"</td></tr>
+                </table>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">📖</span> Estudio de caso: Raskolnikov</h2>
+                <div class="quote-box"><div class="quote-text" style="font-size:.76em;">En <em>Crimen y castigo</em>, Rodia Raskolnikov, joven frustrado por sus graves problemas económicos, planea matar a Alena Ivánovna, una anciana usurera cruel y estafadora, para empeñar un reloj y empobrecer a su familia. Tras cometer el crimen, <strong>no le permite vivir la culpa</strong> y termina pensando en suicidarse.</div><div class="quote-author">Fiódor Dostoyevski — Crimen y castigo</div></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">📗</span> Alfonso Reyes — Cartilla moral</h2>
+                <div class="quote-box"><div class="quote-text" style="font-size:.76em;">"La apreciación del bien, objeto de la moral, supone el acatamiento de una serie de <strong>respetos</strong>. El primero es el respeto que cada ser humano se debe a sí mismo, en cuanto es cuerpo y en cuanto es alma... Después del respeto a la propia persona, corresponde examinar el respeto a la familia... Nuestra existencia transcurre en compañía de un grupo de hombres: esta compañía humana es mi sociedad. Pues bien: en torno al círculo del respeto familiar, se extiende el círculo del respeto a mi sociedad."</div><div class="quote-author">Alfonso Reyes — Cartilla moral</div></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🇲🇽</span> Respeto a la patria y la sociedad</h2>
+                <div class="quote-box"><div class="quote-text" style="font-size:.76em;">"Después de aprender a respetar a la sociedad, se debe aprender a respetar a la sociedad organizada en Estado, en gobierno con sus propias leyes. La nación, la patria, no se confunde del todo con el Estado. El Estado mexicano ha cambiado varias veces de forma o de constitución, y siempre ha sido la misma patria. El respeto a la patria va acompañado de ese sentido que todos llevamos en nuestros corazones: <strong>patriotismo</strong>: amor a nuestro país, deseo de mejorarlo, confianza en sus futuros destinos."</div><div class="quote-author">Alfonso Reyes — Cartilla moral</div></div>
+                <div class="real-life fragment" style="margin-top:12px;"><div class="rl-label">Síntesis de Reyes</div><p style="font-size:.8em;">"El respeto de la propia persona obliga al respeto para el prójimo. El respeto de la propia familia lleva al respeto de los lazos familiares entre los demás. El respeto del propio país lleva al respeto para los demás países. Y todo ello se suma en el respeto general de la sociedad humana."</p></div>
+            </section>
+            <!-- ============================================================ -->
+            <!-- SECCIÓN: CONTEXTO INDIVIDUAL -->
+            <!-- ============================================================ -->
+            <section class="section-header" id="sec-individual">
+                <span class="section-icon">🪞</span>
+                <h2>Contexto individual</h2>
+                <p style="color:rgba(255,255,255,.5);">Conciencia, autonomía, libertad y responsabilidad</p>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🧠</span> La vida moral se sustenta en la conciencia</h2>
+                <div class="card card-accent-blue"><p style="font-size:.84em;">"La vida moral obliga a los individuos a tener cuidado y respeto por las demás personas, pero la persona más cercana e inmediata que se tiene es <strong>a sí mismo</strong>. Cada uno merece el mismo cuidado y respeto que se prodiga a los demás. La vida moral individual se sustenta en la <strong>conciencia</strong>."</p></div>
+                <div class="quote-box fragment" style="margin-top:12px;"><div class="quote-text" style="font-size:.76em;">"El hombre —dice <strong>Erich Fromm</strong>— está dotado de razón, es vida consciente de sí misma; tiene conciencia de sí mismo, de sus semejantes, de su pasado y de las posibilidades de su futuro. Esa conciencia de sí mismo como una entidad separada, la conciencia de su breve lapso de vida, del hecho de que nace sin que intervenga su voluntad, de que morirá antes que los que ama... la conciencia de su soledad y separatidad (estar separado de los demás)."</div><div class="quote-author">Erich Fromm</div></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🫀</span> Dar de sí mismo</h2>
+                <div class="quote-box"><div class="quote-text" style="font-size:.78em;">"Cada sujeto crece y se desarrolla, se hace más independiente y autónomo. No solo recibe o se satisface a sí mismo, sino que <strong>da</strong>: da de sí misma, de lo más precioso que tiene: de su alegría, de su interés, de su comprensión, de su conocimiento."</div><div class="quote-author">Erich Fromm</div></div>
+                <div class="real-life fragment" style="margin-top:12px;"><div class="rl-label">Orientación</div><p style="font-size:.82em;">Quienes son capaces de dar en este sentido, orientan sus relaciones hacia el <strong>cariño y la amabilidad</strong>. No significa necesariamente sacrificar su vida por la otra.</p></div>
+                <div class="card card-accent-green fragment" style="margin-top:10px;"><p style="font-size:.8em;">También en la vida individual hay normas: respetarse y quererse, ser honesto, la autorrealización. El <strong>primer deber</strong> que se tiene como personas es conocerse a sí mismo: cuestionarse quién se es y quién se quiere ser, y qué le toca hacer para vivir con sinceridad.</p></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🎓</span> ¿Cómo se aprende moral en la vida individual?</h2>
+                <div class="card card-accent-gold"><p style="font-size:.83em;">La madre y los demás parientes dan al individuo sus primeras lecciones de vida moral. Después llegan la escuela, la iglesia y lo que se adquiere en cada etapa.</p></div>
+                <div class="card card-accent-blue fragment" style="margin-top:12px;"><p style="font-size:.82em;">La <strong>etapa inicial</strong> de la vida moral es heterónoma: la persona se comporta de acuerdo con normas o lineamientos ajenos.</p></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🔀</span> Heteronomía y autonomía</h2>
+                <div class="grid-2">
+                    <div class="card card-accent-orange fragment">
+                        <h4 style="color:var(--accent-orange);">Heterónoma</h4>
+                        <p style="font-size:.78em;"><em>Heteros</em> = "otro" + <em>nomos</em> = "ley, norma"</p>
+                        <p style="font-size:.76em;">Quien tiene poca madurez y conocimiento de la vida obedece las órdenes de los padres. Con la edad, la obediencia pasa al <strong>convencimiento y a razones fundadas en el buen juicio</strong>.</p>
+                    </div>
+                    <div class="card card-accent-green fragment">
+                        <h4 style="color:var(--accent-green);">Autónoma</h4>
+                        <p style="font-size:.78em;"><em>Autos</em> = "propio" + <em>nomos</em> = "norma"</p>
+                        <p style="font-size:.76em;">Actúa de manera autónoma quien se comporta según las normas que <strong>voluntaria, consciente y libremente se impone a sí mismo</strong>, que se marca objetivos y lucha por conseguirlos. Al madurar se obtienen independencia y experiencia.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">📗</span> Para saber más: dos morales</h2>
+                <div class="grid-2">
+                    <div class="card card-accent-orange fragment"><h4 style="color:var(--accent-orange);">Moral heterónoma</h4><p style="font-size:.8em;">Las fuentes de la moralidad son la <strong>tradición, el Estado y la Iglesia</strong>.</p></div>
+                    <div class="card card-accent-green fragment"><h4 style="color:var(--accent-green);">Moral autónoma</h4><p style="font-size:.8em;">La fuente es la <strong>propia conciencia</strong>, que se vale de los principios aprendidos, la dignidad y el remordimiento. Esta moral requiere incorporar la <strong>reflexión y la crítica</strong> a nuestra conducta.</p></div>
+                </div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🗽</span> ¿Qué es la libertad?</h2>
+                <div class="definition-box"><div class="def-title">Libertad</div><div class="def-text">Facultad racional de las personas que permite <strong>elegir entre distintas opciones</strong> aquella que se considera la mejor o más adecuada para sí mismo y para los demás.</div></div>
+                <div class="card card-accent-purple fragment" style="margin-top:12px;"><p style="font-size:.83em;"><strong>La libertad es el asunto de que se ocupa la ética.</strong></p></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">💬</span> Savater define la libertad</h2>
+                <div class="quote-box"><div class="quote-text" style="font-size:.78em;">"Libertad es poder decir <strong>sí o no</strong>; lo hago o no lo hago; digan lo que digan mis jefes o los demás; esto me conviene y lo quiero; aquello no me conviene y por tanto no lo quiero. Libertad es decidir, pero también, no lo olvides, <strong>darte cuenta de que estás decidiendo</strong>. Lo más opuesto a dejarse llevar, como podrás comprender. Y para no dejarte llevar no tienes más remedio que intentar pensar al menos dos veces lo que vas a hacer."</div><div class="quote-author">Fernando Savater</div></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🚭</span> Libertad y límites</h2>
+                <div class="card card-accent-blue"><p style="font-size:.83em;">Las personas podemos hacer lo que más nos convenga, <strong>siempre y cuando no actuemos en contra de la libertad de los demás</strong>.</p></div>
+                <div class="real-life fragment" style="margin-top:12px;"><div class="rl-label">Ejemplo</div><p style="font-size:.82em;">Juan tiene la posibilidad de fumar, aun cuando sepa que le hace mucho daño a su salud. Sin embargo, los demás asistentes al restaurante no tienen por qué verse afectados por una mala decisión personal: ellos requieren respirar el aire más puro posible.</p></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">💪</span> Voluntad y libertinaje</h2>
+                <div class="grid-2">
+                    <div class="card card-accent-gold fragment"><h4 style="color:var(--accent-gold);">La voluntad</h4><p style="font-size:.8em;">Para hablar de libertad no basta el aspecto racional: la <strong>voluntad</strong> desempeña una parte importante. No basta con saber racionalmente cómo ha de actuar; también es importante tener la voluntad de llevarlo a cabo. Mucha gente sabe lo que tiene que hacer, pero no tiene la voluntad para hacerlo.</p></div>
+                    <div class="card card-accent-red fragment"><h4 style="color:var(--accent-red);">Libertad ≠ Libertinaje</h4><p style="font-size:.8em;">Hay que distinguir entre tener libertad y vivir sin ninguna limitación. Hacer lo que se quiera de manera irresponsable <strong>no es libertad</strong>: a eso algunas personas le llaman <strong>libertinaje</strong>. Para ejercer verdaderamente la libertad, debe hacerse de manera responsable y autónoma.</p></div>
+                </div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🤝</span> Responsabilidad</h2>
+                <div class="definition-box"><div class="def-title">Responsabilidad</div><div class="def-text">Del latín <em>respondere</em>: la obligación o necesidad que adquiere una persona de <strong>responder por las consecuencias de sus actos libremente ejecutados</strong>. Esto implica que el sujeto se sabe autor de estos y que acepta sus consecuencias.</div></div>
+                <div class="card card-accent-red fragment" style="margin-top:12px;"><p style="font-size:.82em;">El problema es que a algunas personas les cuesta aceptar su responsabilidad y entonces la <strong>evaden</strong>. Esto es entendible cuando se es pequeño: cuando la mamá pregunta "¿qué pasó aquí?", el niño asegura: <em>"Yo no fui, mamá, ¡solito se rompió!"</em></p></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">⚽</span> Ejemplo: Carlos y el vidrio</h2>
+                <div class="real-life"><div class="rl-label">Caso</div><p style="font-size:.83em;">Carlos juega con la pelota con otros amiguitos. Uno de ellos le pega y rompe un vidrio de la ventana de doña Julia. Todos salen corriendo a esconderse; Carlos se mete corriendo y se esconde detrás del sofá. Su padre lo ve y le pregunta qué pasa.</p></div>
+                <div class="card card-accent-green fragment" style="margin-top:12px;"><p style="font-size:.83em;">Al enterarse de lo sucedido, el padre toma de la mano al niño y juntos van con doña Julia: le ofrecen <strong>una disculpa</strong>, barren los vidrios y van a la vidriería a colocar uno nuevo.</p></div>
+                <div class="fun-fact fragment" style="margin-top:10px;"><div class="ff-label">Aprendizaje</div><p style="font-size:.8em;">Así se forma un niño y luego un joven más responsable: aceptar las consecuencias de sus decisiones. Una conducción amorosa y justa de los padres permite que los hijos aprendan a ser responsables.</p></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🎯</span> Beneficios de la responsabilidad</h2>
+                <div class="grid-2">
+                    <div class="card card-accent-blue fragment"><h4 style="color:var(--accent-blue);">A nivel personal</h4><p style="font-size:.8em;">Vivir con responsabilidad permite vivir con <strong>menos riesgos y problemas</strong>; mejorar la relación con los demás deja al individuo en posibilidad de cumplir sus metas.</p></div>
+                    <div class="card card-accent-purple fragment"><h4 style="color:var(--accent-purple);">Proyecto de vida</h4><p style="font-size:.8em;">Los individuos deben <strong>marcar sus metas</strong> y establecer las formas a través de las cuales, con disciplina y voluntad, deben luchar por alcanzarlas.</p></div>
+                </div>
+                <div class="fun-fact fragment" style="margin-top:12px;"><div class="ff-label">Adolescentes</div><p style="font-size:.8em;">No son "rebeldes": el joven ya no obedece ciegamente, sino que es <strong>crítico</strong> en su obediencia. A los adolescentes hay que explicarles el sustento de una norma: si se dan las razones correctas, la mayoría las entenderá.</p></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🌐</span> La libertad como herencia</h2>
+                <div class="quote-box"><div class="quote-text" style="font-size:.77em;">"La libertad significa <strong>retribuir</strong>... ¿Y qué se debe retribuir? Por lo menos, lo que hemos recibido o lo que deseamos recibir. Si se recibe el don de la libertad o se busca, entonces hay que dar libertad a sus semejantes. Así, la libertad se convierte en herencia y adquiere una dimensión que trasciende el interés personal. Una sociedad sin libertad se estanca, sufre, pierde la autocrítica, la capacidad de cuestionamiento y de evolución."</div><div class="quote-author">Ética y Valores I — Bloque 3</div></div>
+                <div class="card card-accent-gold fragment" style="margin-top:10px;"><p style="font-size:.82em;">En una sociedad, los ciudadanos deben elegir qué hacer en un ambiente propicio para el desarrollo de sus proyectos, pero el ejercicio de la libertad <strong>genera compromisos</strong> que como individuos contraen con la sociedad a la que pertenecen.</p></div>
+            </section>
+            <!-- ============================================================ -->
+            <!-- SECCIÓN: JUVENTUD, SEXUALIDAD Y SALUD -->
+            <!-- ============================================================ -->
+            <section class="section-header" id="sec-juventud">
+                <span class="section-icon">🌱</span>
+                <h2>Juventud, sexualidad y salud</h2>
+                <p style="color:rgba(255,255,255,.5);">Aspectos éticos relacionados con el ser humano</p>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🌱</span> ¿Quién es joven?</h2>
+                <div class="card card-accent-pink"><p style="font-size:.84em;">La juventud es la población que se encuentra entre la infancia y la edad adulta. Según la <strong>Ley del Instituto Mexicano de la Juventud (IMJUVE)</strong>, los jóvenes van de los <strong>12 a los 29 años</strong>, con un conjunto de características tan heterogéneas que sería imposible enlistarlas todas.</p></div>
+                <div class="card card-accent-blue fragment" style="margin-top:12px;"><p style="font-size:.82em;">Algo común para los jóvenes: un conjunto de <strong>cambios que se viven de manera permanente</strong> en los aspectos físico, biológico, psicológico, social y cultural.</p></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🌀</span> Cambios de la etapa</h2>
+                <div class="grid-2">
+                    <div class="card card-accent-purple fragment"><h4 style="color:var(--accent-purple);">Lo que cambia</h4><ul style="font-size:.75em;"><li>Se cultivan nuevas amistades</li><li>Cambian los gustos, el cuerpo y la forma de comportarse</li><li>Empieza un distanciamiento del círculo familiar</li><li>Se busca mayor libertad</li><li>Nuevas actividades interesan; otras se ven aburridas</li></ul></div>
+                    <div class="card card-accent-green fragment"><h4 style="color:var(--accent-green);">Lo que se construye</h4><p style="font-size:.78em;">Hombres y mujeres jóvenes empiezan a definir paulatinamente su <strong>identidad</strong>, así como a generar expectativas y sueños como parte de un <strong>proyecto de vida</strong> a futuro.</p></div>
+                </div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">⚠️</span> Manifestaciones destructivas</h2>
+                <div class="definition-box"><div class="def-title">Manifestaciones destructivas</div><div class="def-text">Todas aquellas acciones que van en <strong>contra de la propia integridad</strong>. Generan daño físico, psicológico, emocional o la combinación de estos y, en un caso extremo, pueden llevar a la persona a la muerte.</div></div>
+                <div class="card card-accent-gold fragment" style="margin-top:12px;"><p style="font-size:.82em;">No todas las experiencias y decisiones de esta etapa son favorables: existe una <strong>atracción por las situaciones de riesgo</strong>, ante una búsqueda constante de novedades.</p></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🥊</span> Tipos de manifestaciones destructivas</h2>
+                <div class="grid-3">
+                    <div class="card card-accent-red fragment"><h4 style="color:var(--accent-red);text-align:center;">Agresiones</h4><p style="font-size:.73em;">Físicas, verbales o psicológicas hacia los demás, principalmente personas de la misma edad: <em>bullying</em>, vandalismo, peleas.</p></div>
+                    <div class="card card-accent-orange fragment"><h4 style="color:var(--accent-orange);text-align:center;">Autolesiones</h4><p style="font-size:.73em;">El propio joven se daña de manera intencionada y consciente como forma de expresar un cúmulo de emociones: cortaduras, quemaduras, golpes.</p></div>
+                    <div class="card card-accent-purple fragment"><h4 style="color:var(--accent-purple);text-align:center;">Sustancias tóxicas</h4><p style="font-size:.73em;">Alcohol o drogas que dañan el cuerpo de manera paulatina, como autodestrucción, toda vez que los daños son <strong>irreversibles</strong>.</p></div>
+                </div>
+            </section>
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">✅</span> Acciones constructivas</h2>
+                <div class="card card-accent-green"><p style="font-size:.84em;">Frente a las acciones destructivas podemos encontrar <strong>acciones constructivas</strong>:</p></div>
+                <div class="grid-3 fragment" style="margin-top:14px;">
+                    <div class="card card-accent-blue" style="text-align:center;"><div style="font-size:1.5em;">⚽</div><h4 style="color:var(--accent-blue);font-size:.8em;">Deporte</h4><p style="font-size:.7em;">Practicar deportes con los amigos</p></div>
+                    <div class="card card-accent-purple" style="text-align:center;"><div style="font-size:1.5em;">🎨</div><h4 style="color:var(--accent-purple);font-size:.8em;">Arte</h4><p style="font-size:.7em;">Pintura, canto coral, baile, teatro, escultura</p></div>
+                    <div class="card card-accent-pink" style="text-align:center;"><div style="font-size:1.5em;">🌳</div><h4 style="color:var(--accent-pink);font-size:.8em;">Recreación</h4><p style="font-size:.7em;">Jugar, caminatas por los parques, recorrer espacios</p></div>
+                </div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">💗</span> La sexualidad</h2>
+                <div class="card card-accent-pink"><p style="font-size:.83em;">La sexualidad forma parte de la vida cotidiana de todos los seres humanos: a lo largo de ella nos definimos como hombres o mujeres, reconocemos la atracción física de los demás y adoptamos un conjunto de comportamientos socialmente aprobados.</p></div>
+                <div class="grid-2 fragment" style="margin-top:12px;">
+                    <div class="card card-accent-purple"><h4 style="color:var(--accent-purple);">Desde el nacimiento</h4><p style="font-size:.75em;">Las manifestaciones de la sexualidad surgen desde el nacimiento e incluyen abrazos, besos, caricias, además de las relaciones sexuales.</p></div>
+                    <div class="card card-accent-blue"><h4 style="color:var(--accent-blue);">En la juventud</h4><p style="font-size:.75em;">Causa gran curiosidad: es cuando se presentan los cambios fisiológicos relacionados con la sexualidad, la atracción física y los vínculos afectivos.</p></div>
+                </div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🤔</span> ¿Qué tanto se habla de ejercerla responsablemente?</h2>
+                <div class="card card-accent-gold"><p style="font-size:.83em;">Hoy los padres, profesores y adultos en general presentan a los jóvenes más información sobre la sexualidad, pero <strong>¿qué tanto se habla de ejercerla de manera responsable?</strong></p></div>
+                <div class="card card-accent-blue fragment" style="margin-top:12px;"><ul style="font-size:.8em;"><li>¿Has pensado en un embarazo no planeado?</li><li>¿Has pensado en una enfermedad de transmisión sexual?</li><li>¿Cuánto consideras al otro?</li><li>¿Has preguntado a tu novia o novio qué espera de la relación amorosa y cómo comportarse en público y en privado?</li></ul></div>
+                <div class="fun-fact fragment" style="margin-top:10px;"><div class="ff-label">Clave</div><p style="font-size:.8em;">La <strong>paternidad responsable</strong> va de la mano con la sexualidad responsable.</p></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🌈</span> Manifestaciones de una sexualidad responsable</h2>
+                <div class="card card-accent-green"><ul style="font-size:.78em;"><li>Todas las personas, sin importar su edad, tienen <strong>dignidad y valor en sí mismas</strong>.</li><li>Existen diversas formas de expresar nuestra sexualidad y cada persona es responsable de la manera de manifestarla.</li><li>Las relaciones sexuales <strong>no deben ser una forma de explotar o dominar</strong> a los demás.</li><li>Cada una de tus decisiones sexuales tiene una <strong>consecuencia</strong> para ti y las personas de tu alrededor.</li><li><strong>Solo tú</strong> tienes el derecho de tomar decisiones respecto a tu sexualidad.</li><li>Tienes derecho a recibir <strong>información y servicios de salud</strong> para ejercer una sexualidad responsable, completa y sin tendencias.</li></ul></div>
+                <div class="card card-accent-pink fragment" style="margin-top:10px;"><p style="font-size:.8em;">Hay muchas formas de ejercerla: no mantener relaciones destructivas, procurar un noviazgo sin violencia verbal o física, en el que se respete a la pareja y se encuentre la compatibilidad y satisfacción mutuas.</p></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">💊</span> Sustancias que afectan la salud</h2>
+                <div class="card card-accent-red"><p style="font-size:.83em;">Muchas sustancias están al alcance de la población y sus consecuencias son variadas: efectos <strong>fisiológicos, de conducta, emocionales</strong> y, en caso extremo, la muerte.</p></div>
+                <div class="card card-accent-orange fragment" style="margin-top:12px;"><p style="font-size:.82em;">El consumo de sustancias tóxicas es una manera de <strong>autodestrucción</strong>. Ejerce mayores consecuencias durante la adolescencia y la juventud, pues el cuerpo se encuentra en desarrollo y muchos órganos internos —como el <strong>cerebro</strong>— aún no llegan a su madurez.</p></div>
+            </section>
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🌍</span> Consecuencias sociales del consumo</h2>
+                <div class="card card-accent-gold"><p style="font-size:.83em;">Para la sociedad, los jóvenes implican el <strong>futuro</strong>: serán quienes procuren el bienestar de las familias, provean recursos económicos, apliquen políticas adecuadas, eduquen a las nuevas generaciones y cuiden a las personas de mayor edad.</p></div>
+                <div class="card card-accent-red fragment" style="margin-top:12px;"><p style="font-size:.82em;">¿Qué pasaría si los jóvenes de hoy <strong>no pueden realizar todo eso</strong> por cuestiones de salud?</p></div>
+                <div class="card card-accent-purple fragment" style="margin-top:8px;"><p style="font-size:.82em;">Desde el punto de vista ético: ¿puede un joven <strong>evadir su compromiso social</strong> futuro por ocasionarse problemas de salud? ¿Debe ser la familia responsable de manera permanente de una persona que se ocasionó un daño por consumo de drogas?</p></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🎓</span> Educación básica y obligatoria</h2>
+                <div class="grid-2">
+                    <div class="card card-accent-blue fragment"><h4 style="color:var(--accent-blue);">Educación básica</h4><p style="font-size:.78em;">Preescolar, primaria y secundaria. Permite adquirir los aprendizajes necesarios para incorporarse a un entorno laboral elemental, convivir con los demás y desempeñar funciones sociales básicas (hijo, ciudadano y eventualmente padre o madre).</p></div>
+                    <div class="card card-accent-purple fragment"><h4 style="color:var(--accent-purple);">Educación obligatoria</h4><p style="font-size:.78em;">Años de servicio educativo que el Estado ha destinado a su población. En México incluye los niveles básicos y el medio superior: <strong>15 años de estudio</strong> para fungir como ciudadano, padre o madre de familia, trabajador, empresario o servidor público.</p></div>
+                </div>
+                <div class="fun-fact fragment" style="margin-top:12px;"><div class="ff-label">Principio ético</div><p style="font-size:.8em;">Ambas parten de un principio de <strong>igualdad, equidad y búsqueda del bienestar</strong>. Sería muy conveniente que todos los jóvenes contaran con las mismas oportunidades para lograr una mejor forma de vida.</p></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🚪</span> Deserción escolar — motivos</h2>
+                <div class="card card-accent-orange"><p style="font-size:.82em;">Al abandono de los estudios por motivos personales, familiares y sociales lo llamamos <strong>deserción escolar</strong>. En el nivel medio superior, los principales motivos son:</p></div>
+                <div class="grid-2 fragment" style="margin-top:12px;">
+                    <div class="card card-accent-red"><h4 style="color:var(--accent-red);">a) Económicos</h4><p style="font-size:.74em;">Aunque la educación pública es gratuita, hay gastos de transporte y alimentación. "¿Qué pagar: los transportes o la leche del hijo menor?" Las mujeres suelen ser quienes abandonan la escuela para ayudar en casa o el campo.</p></div>
+                    <div class="card card-accent-purple"><h4 style="color:var(--accent-purple);">b) Académicos</h4><p style="font-size:.74em;">Los aprendizajes son más complejos conforme se avanza de nivel; no todos somos expertos en todas las asignaturas y algunas materias se consideran "difíciles".</p></div>
+                    <div class="card card-accent-blue"><h4 style="color:var(--accent-blue);">c) Falta de interés</h4><p style="font-size:.74em;">Poco interés por el estudio, realizar tareas o participar en clase. Provoca reprobar y abandonar los estudios ante una mala experiencia académica.</p></div>
+                    <div class="card card-accent-gold"><h4 style="color:var(--accent-gold);">d) Salud, familia y trabajo</h4><p style="font-size:.74em;">Problemas de salud, cambio de domicilio, embarazo adolescente, ingreso al ámbito laboral o migración a otro país.</p></div>
+                </div>
+            </section>
+            <!-- ============================================================ -->
+            <!-- SECCIÓN: CONTEXTO FAMILIAR -->
+            <!-- ============================================================ -->
+            <section class="section-header" id="sec-familia">
+                <span class="section-icon">🏠</span>
+                <h2>Contexto familiar</h2>
+                <p style="color:rgba(255,255,255,.5);">La primera escuela de vida moral</p>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">👨‍👩‍👧</span> La familia y la herencia</h2>
+                <div class="quote-box"><div class="quote-text" style="font-size:.78em;">"El ser humano vive en familia como forma de supervivencia... <strong>La herencia es lo que permite al ser humano seguir en pie</strong> y en valerse por sí mismo. El mayor cansancio no es una muestra de debilidad, sino la garantía de una evolución más profunda. El hombre es el que tarda más en desarrollarse: solo para disponer de sus manos, andar, comer, hablar... Por eso necesita más tiempo de aprendizaje."</div><div class="quote-author">Ética y Valores I — Bloque 3</div></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🏫</span> La familia: primera escuela moral</h2>
+                <div class="definition-box"><div class="def-title">Función ética</div><div class="def-text">La familia es <strong>determinante en el desarrollo moral</strong> de las personas: dentro de ella se aprenden obligaciones y responsabilidades. Por eso mucha gente la conoce como la <strong>primera escuela</strong>.</div></div>
+                <p style="font-size:.8em;margin-top:14px;color:rgba(255,255,255,.7);"><strong>Las vías por las cuales la moral se adquiere en el hogar:</strong></p>
+                <div class="grid-3 fragment">
+                    <div class="card card-accent-blue" style="text-align:center;"><div style="font-size:1.3em;">1️⃣</div><h4 style="color:var(--accent-blue);font-size:.76em;">Recomendaciones y reglas</h4></div>
+                    <div class="card card-accent-green" style="text-align:center;"><div style="font-size:1.3em;">2️⃣</div><h4 style="color:var(--accent-green);font-size:.76em;">Trato deferente y respetuoso</h4></div>
+                    <div class="card card-accent-gold" style="text-align:center;"><div style="font-size:1.3em;">3️⃣</div><h4 style="color:var(--accent-gold);font-size:.76em;">Límites y disciplina</h4></div>
+                    <div class="card card-accent-purple" style="text-align:center;"><div style="font-size:1.3em;">4️⃣</div><h4 style="color:var(--accent-purple);font-size:.76em;">Comunicación abierta</h4></div>
+                    <div class="card card-accent-pink" style="text-align:center;"><div style="font-size:1.3em;">5️⃣</div><h4 style="color:var(--accent-pink);font-size:.76em;">Aceptación de la realidad</h4></div>
+                    <div class="card card-accent-orange" style="text-align:center;"><div style="font-size:1.3em;">6️⃣</div><h4 style="color:var(--accent-orange);font-size:.76em;">El ejemplo</h4></div>
+                </div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">1️⃣</span> Vías 1 y 2: reglas y trato</h2>
+                <div class="grid-2">
+                    <div class="card card-accent-blue fragment"><h4 style="color:var(--accent-blue);">Recomendaciones y reglas</h4><ul style="font-size:.73em;"><li>Prohibiciones: "No te quedes con lo que no te pertenece", "No abuses de los demás", "No hagas lo que no quieres que te hagan"</li><li>Recomendaciones: "Sé compasivo", "Nunca permitas que alguien te humille", "No juzgues con tanta severidad"</li><li>Permiten que las personas actúen con <strong>autonomía y responsabilidad</strong></li></ul></div>
+                    <div class="card card-accent-green fragment"><h4 style="color:var(--accent-green);">Trato deferente y respetuoso</h4><p style="font-size:.75em;">Se aprende que se les debe dar el mismo trato a todos, sobrellevar la relación y comprender al otro. No se darán más oportunidades a los varones que a las mujeres, ni a los mayores que a los menores, ni al revés. De esta manera se aprenden el <strong>respeto y la justicia</strong>.</p></div>
+                </div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">3️⃣</span> Vías 3 y 4: límites y diálogo</h2>
+                <div class="grid-2">
+                    <div class="card card-accent-gold fragment"><h4 style="color:var(--accent-gold);">Establecimiento de límites y disciplina</h4><p style="font-size:.75em;">A muchos hijos no se les ponen límites. Sin ellos, se vuelven personas <strong>egoístas, dominantes</strong> y en el futuro no aprenden a respetar a los demás ni a la sociedad.</p></div>
+                    <div class="card card-accent-purple fragment"><h4 style="color:var(--accent-purple);">Comunicación abierta</h4><p style="font-size:.75em;">Una buena comunicación fomenta la <strong>confianza, la franqueza</strong> y desarrolla el pensamiento. Si en casa se aprende a decir lo que se piensa y siente, se actúa con franqueza y, sobre todo, se aprende el <strong>valor del diálogo</strong>.</p></div>
+                </div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">5️⃣</span> Vías 5 y 6: realidad y ejemplo</h2>
+                <div class="grid-2">
+                    <div class="card card-accent-pink fragment"><h4 style="color:var(--accent-pink);">Aceptación de la realidad</h4><p style="font-size:.75em;">Una de las mayores enseñanzas que se reciben en casa: se debe <strong>aceptar la realidad tal como esta se presenta</strong>.</p></div>
+                    <div class="card card-accent-orange fragment"><h4 style="color:var(--accent-orange);">El ejemplo</h4><p style="font-size:.75em;">Desde que se es niño se observa a los padres: mediante la <strong>imitación y el ejemplo</strong> se aprende a ser hombres y mujeres. Si los padres hablan con muy buenos discursos pero su conducta no corresponde, <strong>pierden mucho de su autoridad moral</strong>.</p></div>
+                </div>
+                <div class="card card-accent-blue fragment" style="margin-top:12px;"><p style="font-size:.8em;">Los padres deben propiciar relaciones <strong>tranquilas, afectuosas y armoniosas</strong>, que brinden amor, seguridad y confianza. Cuando alguna familia no pueda proporcionar todos los elementos de seguridad y apoyo, cada persona deberá ver esos plantes como <strong>áreas de oportunidad</strong>.</p></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">❤️</span> Valores y desafíos de la familia</h2>
+                <div class="grid-2">
+                    <div class="card card-accent-green fragment"><h4 style="color:var(--accent-green);">Valores de la familia</h4><p style="font-size:.77em;">Igualdad, libertad, respeto mutuo y colaboración. Deben tener lugar los mejores sentimientos y actitudes: <strong>responsabilidad, ternura, perdón, respeto, fidelidad y comprensión</strong>.</p></div>
+                    <div class="card card-accent-red fragment"><h4 style="color:var(--accent-red);">Desafíos</h4><ul style="font-size:.73em;"><li>Enseñanza de valores frente a la crisis mundial de valores</li><li>Nuevos medios de comunicación e intercambio de información</li><li>Sociedad diversificada, plural, multicultural y del conocimiento</li><li>Nuevos roles de la mujer en la sociedad</li></ul></div>
+                </div>
+                <div class="fun-fact fragment" style="margin-top:10px;"><div class="ff-label">Conclusión</div><p style="font-size:.8em;">Aun con todo este panorama, <strong>con mucho, la familia es la institución que forma a las personas de mejor manera</strong>.</p></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🏡</span> Usos y costumbres familiares</h2>
+                <div class="card card-accent-gold"><p style="font-size:.82em;">La sociedad actual es compleja: parece que los jóvenes aprenden más de la televisión e internet que de la educación familiar. La tecnología y la vida globalizada exigen una educación <strong>más cercana y afectuosa</strong>, con más comunicación y confianza, en la que <strong>todos los integrantes se formen de manera continua</strong>.</p></div>
+                <div class="card card-accent-green fragment" style="margin-top:12px;"><h4 style="color:var(--accent-green);">La familia cubre necesidades básicas</h4><ul style="font-size:.77em;"><li><strong>Seguridad afectiva:</strong> necesidad de afecto, capacidad de dar y recibir amor</li><li><strong>Confianza</strong> en sí mismo</li><li><strong>Seguridad</strong> de sentirse útil, parte de algo y ligado a alguien</li><li><strong>Sentimiento de ser valioso</strong></li></ul></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🚨</span> Violencia familiar</h2>
+                <div class="definition-box"><div class="def-title">Violencia familiar</div><div class="def-text">El <strong>maltrato</strong> (psicológico, verbal, económico o físico) de uno de los integrantes de la familia a manos de otro. Se calcula que al menos en <strong>una de cada tres casas en México</strong> este tipo de violencia es una práctica habitual.</div></div>
+                <div class="card card-accent-orange fragment" style="margin-top:12px;"><p style="font-size:.8em;">Si se tiene poca capacidad para confrontar situaciones difíciles, la violencia termina en agresión <strong>contra la sociedad en general</strong>.</p></div>
+                <div class="card card-accent-red fragment" style="margin-top:8px;"><p style="font-size:.8em;">En un ambiente hostil surge <strong>desconfianza</strong>, la ayuda ya no se da o se hace con muchas reservas, se pierde la cohesión social y el individuo se torna más agresivo, ya que su entorno no le brinda oportunidades saludables de vida.</p></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🧒</span> Consecuencia en los niños</h2>
+                <div class="card card-accent-red"><p style="font-size:.84em;">"Si se le pega a un niño porque hizo algo incorrecto, el niño <strong>no aprenderá a hacer las cosas del modo correcto</strong>: solo acumulará rencor hacia quien le pegó."</p></div>
+                <div class="card card-accent-blue fragment" style="margin-top:12px;"><p style="font-size:.8em;">Aun cuando el ambiente se torne complejo, la persona <strong>puede adoptar una postura crítica y constructiva</strong>: no porque el ambiente sea más complejo, la persona tiene que responder de la misma manera.</p></div>
+                <div class="card card-accent-green fragment" style="margin-top:8px;"><p style="font-size:.8em;">En un ambiente donde los seres humanos no están amenazados, hay <strong>oportunidad de desarrollo</strong>. Si has tenido la fortuna de no haber sido agredido y has sido tratado con amor y respeto, con mayor razón es tu obligación <strong>no ser violento</strong>.</p></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🆘</span> Maltrato infantil y ayuda</h2>
+                <div class="card card-accent-orange"><p style="font-size:.82em;">Cada año, miles de niños son maltratados en México, y la mayor parte de las ocasiones los responsables son <strong>sus propios padres</strong>. El maltrato no se limita a vejaciones: incluye actos violentos, insultos, actitudes de amenaza, etc. — se constituye en todo un <strong>síndrome</strong>.</p></div>
+                <div class="card card-accent-green fragment" style="margin-top:12px;"><p style="font-size:.82em;">Es importante saber que, en caso de sufrir violencia intrafamiliar, se puede recurrir a <strong>organizaciones especializadas</strong> en ayudar a quienes se encuentran en dicha situación. Pueden contactarse mediante centros de salud pública u otros órganos gubernamentales.</p></div>
+            </section>
+
+            <!-- ============================================================ -->
+            <!-- SECCIÓN: CONTEXTO SOCIAL -->
+            <!-- ============================================================ -->
+            <section class="section-header" id="sec-social">
+                <span class="section-icon">🌐</span>
+                <h2>Contexto social</h2>
+                <p style="color:rgba(255,255,255,.5);">Convivencia, identidad cultural y diversidad</p>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🌐</span> ¿Qué es una sociedad?</h2>
+                <div class="definition-box"><div class="def-title">Sociedad</div><div class="def-text">Un grupo de personas que se establece en un lugar con la intención de <strong>convivir</strong>, regidos por una autoridad legitimamente establecida y con la intención explícita de <strong>cooperar</strong> en la satisfacción de las necesidades y el <strong>bien común</strong>.</div></div>
+                <div class="card card-accent-green fragment" style="margin-top:12px;"><p style="font-size:.8em;">La sociedad humana permite que cada persona cumpla sus finalidades personales, al mismo tiempo que colabora en el logro de la realización del otro. Todo acto moral debe ser <strong>libre, consciente y voluntario</strong>: si falta alguno de esos elementos, carece de pleno sentido moral.</p></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">📜</span> Para una convivencia sana</h2>
+                <div class="card card-accent-blue"><p style="font-size:.82em;">Los integrantes deben aprender a:</p><ul style="font-size:.78em;"><li>Respetar a sus semejantes y las normas que regulan la vida social</li><li>Buscar la verdad, la libertad y la justicia</li><li>Comunicarse entre sí</li><li>Adquirir, transmitir y conservar los conocimientos y la cultura</li><li>Defender sus derechos y cumplir sus deberes</li><li>Trabajar, descansar y distraerse sanamente</li></ul></div>
+                <div class="fun-fact fragment" style="margin-top:10px;"><div class="ff-label">RECUERDA</div><p style="font-size:.8em;">Al participar en la sociedad, cada persona recibe y aporta bienes, servicios, atenciones y ayuda. La vida social es un conjunto de <strong>derechos y deberes</strong>: convivir no es fácil; hay que seguir normas, obedecer reglas sociales y hacer algunas concesiones.</p></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🧍</span> Seres gregarios e individuales</h2>
+                <div class="grid-2">
+                    <div class="card card-accent-purple fragment"><h4 style="color:var(--accent-purple);">Gregarios</h4><p style="font-size:.78em;">Nos congregamos con otros para convivir y ayudarnos.</p></div>
+                    <div class="card card-accent-gold fragment"><h4 style="color:var(--accent-gold);">Individuales</h4><p style="font-size:.78em;">Tenemos metas y deseos personales.</p></div>
+                </div>
+                <div class="card card-accent-blue fragment" style="margin-top:12px;"><p style="font-size:.83em;">A veces surge una lucha entre nuestras <strong>responsabilidades sociales y nuestros deseos individuales</strong>. No se trata de sacrificar unos por otros, sino de buscar una <strong>prudente conciliación</strong>.</p></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🥣</span> Los dos ermitaños</h2>
+                <div class="quote-box"><div class="quote-text" style="font-size:.75em;">En una lejana montaña vivían dos ermitaños que rendían culto a Dios y se amaban el uno al otro. Uno, por motivos de fuerza mayor, debía partir y le dijo al otro: "Toma la escudilla de barro y se la dio a su hermano; que sea para ti". El otro replicó: "No acepto tu caridad. Debemos partirla". Como no podían, propuso: "Si rompes la escudilla, ¿de qué nos servirá a ti o a mí? Si te parece, pongámosla a la suerte". El más joven insistió: "Solo tomaré lo que en justicia me corresponde y no confiaré mis derechos a la suerte. Debe partirse la escudilla". El viejo se descompuso de ira: <strong>"¡Ah maldito cobarde, no te atreves a pelear, eh!"</strong></div><div class="quote-author">Gibrán Khalil Gibrán — El Loco</div></div>
+                <div class="real-life fragment" style="margin-top:12px;"><div class="rl-label">Reflexión</div><p style="font-size:.8em;">Cuando alguien no tiene la voluntad para hacer las cosas bien —llegar a un acuerdo o un acto de generosidad—, es muy difícil lograr algo. Todo acto moral debe ser <strong>libre, consciente y voluntario</strong>.</p></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🧩</span> Diversidad humana</h2>
+                <div class="card card-accent-green"><p style="font-size:.83em;">Para convivir en una sociedad tan compleja, tenemos que ser <strong>respetuosos y tolerantes</strong> de los comportamientos y actitudes de los demás. El respeto y la tolerancia permiten construir una sociedad <strong>incluyente</strong>, que acepte las distintas expresiones y modos de ser, sin distingos ni discriminaciones.</p></div>
+                <div class="quote-box fragment" style="margin-top:12px;"><div class="quote-text" style="font-size:.78em;">"El parámetro con el que tenemos que valorar a una persona es <strong>ella misma</strong>. Cada uno tiene como meta desarrollarse de acuerdo con sus intereses, inclinaciones, capacidades y posibilidades. Nadie tiene que ser igual: <strong>ser humano es ser original y, por tanto, distinto y diverso</strong>. En la diversidad y en la construcción positiva de buenas relaciones se encuentra la riqueza de las infinitas posibilidades y manifestaciones del ser humano."</div><div class="quote-author">Ética y Valores I — Bloque 3</div></div>
+                <div class="card card-accent-pink fragment" style="margin-top:10px;"><p style="font-size:.8em;">Esta maravillosa y conmovedora pluralidad es la base de la <strong>literatura, del arte y de la ética</strong>.</p></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🎭</span> Identidad cultural</h2>
+                <div class="definition-box"><div class="def-title">Identidad cultural</div><div class="def-text">Conjunto de características ideológicas y culturales que las personas adquirimos al ser influidos por las <strong>tradiciones, creencias y modos de comportamiento</strong> de una sociedad. Esta entidad grupal nos hace comprender las normas y pautas propias de nuestro entorno hasta <strong>sentirlas nuestras</strong>.</div></div>
+                <div class="card card-accent-blue fragment" style="margin-top:12px;"><p style="font-size:.8em;">Ejemplo: muchas personas adquieren un fuerte sentido de <strong>pertenencia</strong> hacia la comunidad de donde son nativos y se identifican con sus tradiciones y valores más arraigados.</p></div>
+                <div class="card card-accent-gold fragment" style="margin-top:8px;"><p style="font-size:.8em;">Debido a las dinámicas sociales de mediados del siglo XX, esta perspectiva cambió: lo que antes se consideraba correcto fue cuestionado hasta que las personas dejaron de identificarse totalmente con las bases que dictaba la sociedad. Esto impulsó causas como los <strong>derechos humanos</strong>, el fin de guerras, el alto a la discriminación, los derechos de la mujer y muchas más.</p></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">📢</span> Manifestaciones sociales</h2>
+                <div class="definition-box"><div class="def-title">Manifestación social</div><div class="def-text"><strong>Demostración pública</strong> de expresiones de apoyo o rechazo a determinadas causas sociales, políticas, culturales, intelectuales o económicas.</div></div>
+                <div class="grid-2 fragment" style="margin-top:12px;">
+                    <div class="card card-accent-blue"><h4 style="color:var(--accent-blue);">Formas</h4><p style="font-size:.75em;">Pancarta, cinta amarrada en el brazo, forma de vestir, carteles y objetos simbólicos para transmitir el mensaje.</p></div>
+                    <div class="card card-accent-orange"><h4 style="color:var(--accent-orange);">Tipos</h4><p style="font-size:.75em;">Huelgas, paros y boicots: buscan la parálisis de una parte de la sociedad para resolver un problema político.</p></div>
+                </div>
+                <div class="card card-accent-purple fragment" style="margin-top:10px;"><p style="font-size:.8em;">Ejemplo: grupos de mujeres que protestan contra la violencia física y sexual hacia el sexo femenino y el trato desigual en el trabajo y el hogar.</p></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🏛️</span> Tribus urbanas y contracultura</h2>
+                <div class="card card-accent-purple"><p style="font-size:.83em;">Las tribus urbanas son <strong>grupos de individuos que conviven cotidianamente</strong> y comparten entre sí gustos, ideas, creencias y comportamientos distintos —y muchas veces contrarios— a los de la cultura que prevalece, por lo que se les conoce como <strong>contraculturales</strong>.</p></div>
+                <div class="grid-2 fragment" style="margin-top:12px;">
+                    <div class="card card-accent-pink"><h4 style="color:var(--accent-pink);">Expresarse es ético</h4><p style="font-size:.76em;">"Como seres que se transforman, las personas siempre estamos manifestando o expresando lo que somos: de manera individual o colectiva. A veces se manifiesta el enojo con manifestaciones multitudinarias, otras con una simple forma de vestir."</p></div>
+                    <div class="card card-accent-gold"><h4 style="color:var(--accent-gold);">Identidad</h4><p style="font-size:.76em;">Todos tenemos una identidad individual y colectiva (familia, amigos, compañeros). <strong>Una identidad no puede ser impuesta</strong>: es decisión libre de cada persona. A nadie se le puede culpar por con quién decidió identificarse.</p></div>
+                </div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">☮️</span> Los hippies (años sesenta)</h2>
+                <div class="card card-accent-purple"><p style="font-size:.82em;">En Estados Unidos, este grupo sostenía ideas radicales:</p><ul style="font-size:.76em;"><li>Igualdad de géneros</li><li>Vida libre, pero no en el matrimonio</li><li>Oposición a la guerra de Vietnam</li><li>Derechos de la clase obrera</li><li>Oposición al racismo</li></ul></div>
+                <div class="quote-box fragment" style="margin-top:10px;"><div class="quote-text" style="font-size:.77em;">"Todo es de todos, nada nos pertenece" · "Amor y paz" · "El amor debe ser libre" · "Nunca hagamos mal a nadie, para ser bien recibidos en todas partes". Su oposición no era pasiva, sino <strong>activa</strong>.</div><div class="quote-author">Ideario hippie</div></div>
+                <div class="card card-accent-green fragment" style="margin-top:8px;"><p style="font-size:.77em;">Su principal forma de expresión eran las <strong>canciones</strong>, en contra de la violencia. Se oponían al racismo, la desigualdad de género y la guerra.</p></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🔄</span> De contracultura a moda</h2>
+                <div class="card card-accent-orange"><p style="font-size:.82em;">El movimiento llegó a su fin cuando la gente se empezó a vestir como ellos, dejarse el pelo largo y escuchar su música: <strong>llegó el momento en que dejaron de ser contracultura y se convirtieron en moda</strong>.</p></div>
+                <div class="quote-box fragment" style="margin-top:12px;"><div class="quote-text" style="font-size:.8em;">"Si hay algo que acabe con un movimiento que propugna la diferencia es que todo mundo lo tome como modelo. <strong>Si la identidad significa diferencia, la copia se traduce en falta de identidad</strong>."</div><div class="quote-author">Ética y Valores I — Bloque 3</div></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🎤</span> Rap e hip-hop</h2>
+                <div class="card card-accent-blue"><p style="font-size:.83em;">Muchas personas se identificaron con movimientos musicales y culturales como el <strong>rap o el hip-hop</strong>: una forma de clamar ante las conductas racistas y excluyentes de algunos miembros de la sociedad estadounidense hacia los afroamericanos.</p></div>
+                <div class="card card-accent-purple fragment" style="margin-top:12px;"><p style="font-size:.8em;">Su principal forma de expresión eran las <strong>canciones</strong>, pronunciadas en contra de la violencia que sufrían las calles por culpa de la pobreza, las pandillas que vendían drogas, la marginalidad, la desigualdad social y la brutalidad policiaca.</p></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🏙️</span> Otras tribus urbanas</h2>
+                <div class="grid-3">
+                    <div class="card card-accent-pink fragment"><h4 style="color:var(--accent-pink);text-align:center;">Cholos</h4><p style="font-size:.72em;">En la Ciudad de México, se distinguen por una forma peculiar de vestir y comportarse, con identidad propia.</p></div>
+                    <div class="card card-accent-red fragment"><h4 style="color:var(--accent-red);text-align:center;">Cabezas rapadas</h4><p style="font-size:.72em;">Creen que un país o etnia son superiores a los demás. Fundados en el fanatismo, promueven discriminación, odio e ideologías contrarias a la moral social; actos terroristas y xenófobos.</p></div>
+                    <div class="card card-accent-orange fragment"><h4 style="color:var(--accent-orange);text-align:center;">Pandillas</h4><p style="font-size:.72em;">Pandillerismo y delincuencia organizada en grupos conocidos como "clicas". Han tenido un rápido crecimiento.</p></div>
+                </div>
+                <div class="card card-accent-green fragment" style="margin-top:12px;"><p style="font-size:.78em;">También: <strong>Leones, Scouts y ambientalistas</strong>, cuyo comportamiento es afín a la convivencia social y la protección del ambiente.</p></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🚌</span> Rosa Parks y el boicot de Montgomery</h2>
+                <div class="card card-accent-orange"><p style="font-size:.8em;">En 1955, en la ciudad de Montgomery, Alabama, surgió un boicot contra la detención ilegal de una mujer afrodescendiente. Todo el día la señora <strong>Rosa Parks</strong> se sentó en el autobús. Más adelante, el conductor le pidió levantarse para un hombre blanco: ella se negó. Amenazó con llamar a la policía; siguió negándose y fue entonces cuando la policía llegó a detenerla.</p></div>
+                <div class="grid-2 fragment" style="margin-top:12px;">
+                    <div class="card card-accent-green"><h4 style="color:var(--accent-green);">Reacción</h4><p style="font-size:.75em;">Reactivó los descontentos de la comunidad afroamericana. Bajo el reverendo <strong>Martin Luther King</strong>, los afroamericanos dejaron de subir a los autobuses, sin importar lo cansados que estuvieran o la distancia que tuvieran que recorrer.</p></div>
+                    <div class="card card-accent-blue"><h4 style="color:var(--accent-blue);">Resultado</h4><p style="font-size:.75em;">El boicot persistió hasta abolir la segregación en el transporte público. Los autobuses cayeron en la bancarrota y el gobierno de Alabama atendió las demandas. Fue secundado por ciudadanos blancos con idea de justicia social.</p></div>
+                </div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">✈️</span> Migración: un fenómeno global</h2>
+                <div class="card card-accent-blue"><p style="font-size:.8em;">En Europa, sobre todo la del centro y oeste, ha llegado una gran cantidad de personas de <strong>Oriente Medio, Turquía, el este de China, África y Latinoamérica</strong>.</p></div>
+                <div class="grid-2 fragment" style="margin-top:12px;">
+                    <div class="card card-accent-green"><h4 style="color:var(--accent-green);">Actitud positiva</h4><p style="font-size:.75em;">Muchos ciudadanos han aceptado convivir con los migrantes en la escuela, el trabajo y los lugares de diversión.</p></div>
+                    <div class="card card-accent-red"><h4 style="color:var(--accent-red);">Actitud negativa</h4><p style="font-size:.75em;">Otros se muestran celosos e intolerantes: rencor, discriminación y agresiones. Se ha segregado a estos grupos y no se ha logrado integrarlos armónicamente.</p></div>
+                </div>
+                <div class="card card-accent-gold fragment" style="margin-top:12px;"><p style="font-size:.78em;">En <strong>México</strong> vivimos el problema como fenómeno global: las migraciones de <strong>2018 y 2019</strong> (Honduras, El Salvador y Guatemala) se caracterizaron por ser movimientos masivos.</p></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">⚖️</span> Actos contrarios a la moral social</h2>
+                <div class="card card-accent-red"><p style="font-size:.83em;">Siempre hay personas que no comparten los propósitos de la sociedad y quieren <strong>sacar ventaja de los demás</strong> mediante el robo, el secuestro, el asalto y la extorsión, entre otros actos contrarios a la moral.</p></div>
+                <div class="grid-2 fragment" style="margin-top:12px;">
+                    <div class="card card-accent-purple"><h4 style="color:var(--accent-purple);">Identidad y sociedad</h4><p style="font-size:.76em;">Una cultura, legalmente sustentada mediante normas, da <strong>identidad y sentido de pertenencia</strong> y permite la existencia pacífica de personas sometidas a normas o leyes.</p></div>
+                    <div class="card card-accent-blue"><h4 style="color:var(--accent-blue);">Pertenencia</h4><p style="font-size:.76em;">Aprender a comportarse dentro de la sociedad es parte de lo que permite seguir siendo considerado <strong>miembro</strong> de ella.</p></div>
+                </div>
+            </section>
+
+            <!-- ============================================================ -->
+            <!-- SECCIÓN: GÉNERO, VIOLENCIA Y DESIGUALDAD -->
+            <!-- ============================================================ -->
+            <section class="section-header" id="sec-genero">
+                <span class="section-icon">⚖️</span>
+                <h2>Género, violencia y desigualdad</h2>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🔞</span> Sobre la violencia de género</h2>
+                <div class="quote-box"><div class="quote-text" style="font-size:.75em;">"La violencia de género es la que se dirige a una persona en razón de su género. Si bien en las tres primeras décadas del siglo XXI las leyes no permiten la desigualdad de los sexos, persisten <strong>tradiciones, costumbres y cultura en que se es claramente discriminatorio</strong> hacia las mujeres y que, en su caso, llegan a justificar la violencia."</div><div class="quote-author">Ética y Valores I — Bloque 3</div></div>
+                <div class="card card-accent-red fragment" style="margin-top:12px;"><p style="font-size:.82em;">"Aun en estos momentos se siguen escuchando comentarios como <em>«es que son mujeres»</em>, <em>«no son capaces»</em>, <em>«dejen que las dirija un hombre»</em> o <em>«una mujer no sirve para eso»</em>. ¿Quién ha dicho que no es capaz? <strong>¿Por qué la incapacidad se atribuye al sexo?</strong> No tiene lógica. Se trata de una cuestión <strong>cultural</strong>: no es asunto de sexo."</p></div>
+            </section>
+
+            <section data-background-color="#0a0a1a">
+                <h2><span class="icon-lg">🧱</span> Del papel de la mujer al deber ser</h2>
+                <div class="grid-2">
+                    <div class="card card-accent-pink fragment"><h4 style="color:var(--accent-pink);">Causa cultural</h4><p style="font-size:.76em;">También tiene que ver con el papel que se le ha dado a la mujer: se la ha considerado inferior durante años, llevándola a negarse muchas veces a obtener lo que merece por las <strong>represalias</strong> que podría sufrir.</p></div>
+                    <div class="card card-accent-blue fragment"><h4 style="color:var(--accent-blue);">Sentido ético de la igualdad</h4><p style="font-size:.76em;">La igualdad entre géneros se debe apreciar y respetar con el <strong>sentido ético</strong> de que <strong>no debemos discriminar</strong> en ningún sentido. No se trata de una moneda de dos caras: se trata de que el respeto hacia los derechos humanos se ha convertido en una cuestión <strong>innegociable</strong>.</p></div>
+                </div>
+                <div class="fun-fact fragment" style="margin-top:12px;"><div class="ff-label">Igualdad como justicia</div><p style="font-size:.8em;">Ya no puede sostenerse que una persona valga más o menos que otra: <strong>las personas somos valiosas por el simple hecho de serlo</strong>.</p></div>
+            </section>
+            <!-- ============================================================ -->
+            <!-- CIERRE -->
+            <!-- ============================================================ -->
+            <section class="section-header" id="sec-cierre">
+                <span class="section-icon">🏁</span>
+                <h2>Unidad 3: La Ética en diversos contextos</h2>
+                <p style="color:rgba(255,255,255,.6);">Fin del bloque 3</p>
+                <div class="nav-links" style="margin-top:24px;">
+                    <a href="#/sec-bloque">Volver al inicio de la unidad</a>
+                    <a href="#/indice">Índice</a>
+                    <a href="#/sec-genero">← Género y desigualdad</a>
+                </div>
+                <p style="font-size:.75em;color:rgba(255,255,255,.4);margin-top:18px;">Material de apoyo — Ética y Valores I — Unidad 3 (Bloque 3)</p>
+            </section>
+
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/notes/notes.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/markdown/markdown.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/highlight/highlight.js"></script>
+    <script>
+        Reveal.initialize({
+            hash: true,
+            slideNumber: false,
+            controls: true,
+            progress: true,
+            center: true,
+            transition: 'slide',
+            width: 1200,
+            height: 700,
+            margin: 0.04,
+            plugins:[RevealNotes,RevealMarkdown,RevealHighlight]
+        });
+
+        const slideNav=document.getElementById('slide-nav'),slideNavCurrent=document.getElementById('slide-nav-current'),slideNavTotal=document.getElementById('slide-nav-total'),slideNavInput=document.getElementById('slide-nav-input');
+        Reveal.on('ready',()=>{slideNavTotal.textContent=Reveal.getTotalSlides();slideNavCurrent.textContent=Reveal.getIndices().h+1;updateFragmentCounter()});
+        Reveal.on('slidechanged',e=>{slideNavCurrent.textContent=e.indexh+1;updateFragmentCounter()});
+        slideNav.addEventListener('click',()=>{slideNav.classList.add('editing');slideNavInput.value='';slideNavInput.focus()});
+        slideNavInput.addEventListener('keydown',e=>{if(e.key==='Enter'){const n=parseInt(slideNavInput.value);if(!isNaN(n)&&n>=1&&n<=Reveal.getTotalSlides()){Reveal.slide(n-1)}slideNav.classList.remove('editing')}if(e.key==='Escape'){slideNav.classList.remove('editing')}});
+        slideNavInput.addEventListener('blur',()=>{slideNav.classList.remove('editing')});
+        document.getElementById('fullscreen-btn').addEventListener('click',()=>{if(!document.fullscreenElement){document.documentElement.requestFullscreen()}else{document.exitFullscreen()}});
+        document.getElementById('index-btn').addEventListener('click',()=>window.location.hash='#/indice');
+        document.getElementById('nav-prev').addEventListener('click',()=>Reveal.prev());
+        document.getElementById('nav-next').addEventListener('click',()=>Reveal.next());
+
+        const fc=document.getElementById('fragment-counter'),fcCurrent=fc.querySelector('.fc-current'),fcTotal=fc.querySelector('.fc-total');
+        function updateFragmentCounter(){const sl=Reveal.getCurrentSlide();const frags=sl.querySelectorAll('.fragment');if(frags.length>0){fc.classList.add('has-fragments');fcTotal.textContent=frags.length;let vis=0;frags.forEach(f=>{if(f.classList.contains('visible'))vis++});fcCurrent.textContent=vis}else{fc.classList.remove('has-fragments')}}
+        Reveal.on('fragmentshown',()=>updateFragmentCounter());Reveal.on('fragmenthidden',()=>updateFragmentCounter());
+    </script>
+</body>
+</html>

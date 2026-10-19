@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.1, maximum-scale=5.0, user-scalable=yes">
+    <title>Unidad 2 — Axiología y Ética</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/black.css" id="theme">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/plugin/highlight/monokai.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Playfair+Display:wght@700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        :root{--r-background-color:#0a1a0a;--r-main-font:'Inter',sans-serif;--r-heading-font:'Playfair Display',serif;--r-main-font-size:24px;--accent-blue:#4f8cff;--accent-purple:#a855f7;--accent-pink:#ec4899;--accent-green:#10b981;--accent-gold:#f59e0b;--accent-orange:#f97316;--accent-red:#ef4444;--accent-emerald:#34d399;--glass:rgba(255,255,255,.06);--glass-border:rgba(255,255,255,.1)}
+        .reveal{font-family:var(--r-main-font)}.reveal .slides{text-align:left}
+        .reveal .slides section{padding:20px 40px;overflow:hidden;box-sizing:border-box}
+        .reveal .slides section *{max-width:100%;box-sizing:border-box}
+        .reveal .slides p,.reveal .slides li,.reveal .slides h1,.reveal .slides h2,.reveal .slides h3,.reveal .slides h4{overflow-wrap:break-word;word-wrap:break-word;hyphens:auto;margin-right:0;padding-right:0}
+        .reveal .slides section.title-slide{text-align:center;background:linear-gradient(135deg,#0a1a0a 0%,#0f2f1a 50%,#1a3a2a 100%)}
+        .reveal .slides section.title-slide h1{font-family:'Playfair Display',serif;font-size:2.4em;font-weight:900;background:linear-gradient(135deg,#10b981,#f59e0b,#f97316);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1.2;margin-bottom:16px}
+        .reveal .slides section.title-slide .subtitle{font-size:1em;color:rgba(255,255,255,.6);font-weight:300;letter-spacing:2px}
+        .reveal .slides section.title-slide .unit-badge{display:inline-block;background:linear-gradient(135deg,var(--accent-green),var(--accent-gold));color:white;padding:8px 24px;border-radius:30px;font-size:.7em;font-weight:600;letter-spacing:3px;text-transform:uppercase;margin-top:30px}
+        .reveal .slides section.section-header{text-align:center;background:linear-gradient(135deg,#0a1a0a 0%,#0f2f1a 50%,#1a3a2a 100%)}
+        .reveal .slides section.section-header h2{font-family:'Playfair Display',serif;font-size:2em;font-weight:800;background:linear-gradient(135deg,#10b981,#f59e0b);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;margin-bottom:16px}
+        .reveal .slides section.section-header .section-icon{font-size:2.5em;margin-bottom:14px;display:block}
+        .card{background:var(--glass);border:1px solid var(--glass-border);border-radius:14px;padding:14px 16px;margin:8px 0;backdrop-filter:blur(10px);overflow:hidden;box-sizing:border-box}
+        .card p,.card li,.card h4{overflow-wrap:break-word;word-wrap:break-word;hyphens:auto;font-size:.85em}
+        .card-accent-blue{border-left:4px solid var(--accent-blue)}.card-accent-purple{border-left:4px solid var(--accent-purple)}.card-accent-pink{border-left:4px solid var(--accent-pink)}.card-accent-green{border-left:4px solid var(--accent-green)}.card-accent-gold{border-left:4px solid var(--accent-gold)}.card-accent-orange{border-left:4px solid var(--accent-orange)}.card-accent-red{border-left:4px solid var(--accent-red)}.card-accent-emerald{border-left:4px solid var(--accent-emerald)}
+        .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:14px}.grid-3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-top:14px}.grid-2>.card,.grid-3>.card{margin:0;min-width:0}
+        .reveal h1,.reveal h2,.reveal h3,.reveal h4{color:white;font-weight:700}.reveal h2{font-size:1.4em;margin-bottom:14px}.reveal h3{font-size:1.05em;color:var(--accent-green);margin-bottom:8px}.reveal h4{font-size:.9em;color:var(--accent-gold)}
+        .reveal p,.reveal li{color:rgba(255,255,255,.85);line-height:1.6}.reveal ul{list-style:none;padding-left:0}.reveal ul li{padding:3px 0;padding-left:24px;position:relative}.reveal ul li::before{content:'\25B8';position:absolute;left:0;color:var(--accent-green);font-weight:700}
+        .highlight{color:var(--accent-green);font-weight:600}.highlight-gold{color:var(--accent-gold);font-weight:600}.highlight-purple{color:var(--accent-purple);font-weight:600}.highlight-pink{color:var(--accent-pink);font-weight:600}.highlight-blue{color:var(--accent-blue);font-weight:600}
+        .icon-lg{font-size:1.6em;display:inline-block;margin-right:6px;vertical-align:middle}.icon-xl{font-size:3em;display:block;text-align:center;margin-bottom:16px}
+        .definition-box{background:linear-gradient(135deg,rgba(16,185,129,.15),rgba(245,158,11,.15));border:1px solid rgba(16,185,129,.3);border-radius:14px;padding:16px 20px;margin:14px 0;position:relative}.definition-box::before{content:'\1F4D6';font-size:1.5em;position:absolute;top:-12px;left:20px}.definition-box .def-title{font-size:.65em;text-transform:uppercase;letter-spacing:2px;color:var(--accent-green);font-weight:700;margin-bottom:6px}.definition-box .def-text{font-size:.85em;color:rgba(255,255,255,.9);line-height:1.5}
+        .comparison-table{width:100%;border-collapse:separate;border-spacing:0;border-radius:10px;overflow:hidden;font-size:.65em;margin-top:12px}.comparison-table th{background:linear-gradient(135deg,var(--accent-green),var(--accent-gold));color:white;padding:8px 12px;text-align:left;font-weight:600}.comparison-table td{padding:7px 12px;border-bottom:1px solid var(--glass-border);color:rgba(255,255,255,.85)}.comparison-table tr:nth-child(even) td{background:var(--glass)}.comparison-table tr:last-child td{border-bottom:none}
+        .fun-fact{background:linear-gradient(135deg,rgba(245,158,11,.15),rgba(239,68,68,.1));border:1px solid rgba(245,158,11,.3);border-radius:10px;padding:12px 16px;margin:10px 0;font-size:.85em}.fun-fact .ff-label{color:var(--accent-gold);font-weight:700;font-size:.7em;text-transform:uppercase;letter-spacing:1px}
+        .quote-box{background:var(--glass);border-left:4px solid var(--accent-gold);border-radius:0 12px 12px 0;padding:14px 18px;margin:10px 0;position:relative}.quote-box::before{content:'\201C';font-size:3em;color:var(--accent-gold);position:absolute;top:-10px;left:10px;opacity:.3;font-family:serif}.quote-box .quote-text{font-style:italic;font-size:.85em;color:rgba(255,255,255,.9);padding-left:30px;line-height:1.5}.quote-box .quote-author{font-size:.75em;color:var(--accent-gold);text-align:right;margin-top:8px;font-weight:600}
+        .real-life{background:linear-gradient(135deg,rgba(236,72,153,.15),rgba(168,85,247,.15));border:1px solid rgba(236,72,153,.3);border-radius:12px;padding:14px 18px;margin:10px 0}.real-life .rl-label{color:var(--accent-pink);font-weight:700;font-size:.65em;text-transform:uppercase;letter-spacing:2px;margin-bottom:6px}
+        .reveal .slides section{overflow-y:auto;max-height:100%;padding-bottom:40px}.reveal .slides section::-webkit-scrollbar{width:6px}.reveal .slides section::-webkit-scrollbar-track{background:rgba(255,255,255,.05);border-radius:3px}.reveal .slides section::-webkit-scrollbar-thumb{background:rgba(16,185,129,.4);border-radius:3px}.reveal .slides section::-webkit-scrollbar-thumb:hover{background:rgba(16,185,129,.6)}
+        .reveal .slides section .fragment.visible{opacity:1}.reveal .slide-number{display:none!important}
+        .slide-nav{position:fixed;bottom:16px;left:16px;z-index:9999;height:38px;padding:0 16px;display:flex;align-items:center;justify-content:center;border-radius:20px;border:1px solid var(--glass-border);background:rgba(10,26,10,.7);backdrop-filter:blur(10px);color:rgba(255,255,255,.7);font-family:'Consolas',monospace;font-size:.9em;font-weight:600;letter-spacing:1px;cursor:pointer;transition:all .3s ease;box-shadow:0 4px 16px rgba(0,0,0,.3);user-select:none;-webkit-user-select:none}.slide-nav:hover{border-color:var(--accent-green);color:white}.slide-nav .slide-nav-display{display:flex;align-items:center;gap:4px}.slide-nav .slide-nav-current{color:var(--accent-green)}.slide-nav .slide-nav-sep{color:rgba(255,255,255,.3);margin:0 2px}.slide-nav .slide-nav-input{display:none;width:50px;background:transparent;border:none;border-bottom:2px solid var(--accent-green);color:var(--accent-green);font-family:'Consolas',monospace;font-size:1em;font-weight:700;text-align:center;outline:none;padding:2px 0;-moz-appearance:textfield}.slide-nav .slide-nav-input::-webkit-outer-spin-button,.slide-nav .slide-nav-input::-webkit-inner-spin-button{-webkit-appearance:none;margin:0}.slide-nav.editing .slide-nav-display{display:none}.slide-nav.editing .slide-nav-input{display:inline-block}
+        .fullscreen-btn,.index-btn{position:fixed;top:16px;z-index:9999;width:48px;height:48px;border-radius:50%;border:1px solid var(--glass-border);background:rgba(10,26,10,.65);backdrop-filter:blur(10px);color:rgba(255,255,255,.85);font-size:1.1em;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .3s ease;-webkit-tap-highlight-color:transparent;box-shadow:0 4px 16px rgba(0,0,0,.3)}.fullscreen-btn{right:16px}.index-btn{right:76px}.fullscreen-btn:hover,.fullscreen-btn:active,.index-btn:hover,.index-btn:active{border-color:var(--accent-green);background:rgba(16,185,129,.25);color:white;transform:scale(1.05)}
+        .nav-arrow{position:fixed;top:50%;z-index:9999;width:48px;height:48px;border-radius:50%;border:1px solid var(--glass-border);background:rgba(10,26,10,.65);backdrop-filter:blur(10px);color:rgba(255,255,255,.85);font-size:1.2em;cursor:pointer;display:flex;align-items:center;justify-content:center;transition:all .3s ease;-webkit-tap-highlight-color:transparent;box-shadow:0 4px 16px rgba(0,0,0,.3);transform:translateY(-50%)}.nav-arrow-prev{left:16px}.nav-arrow-next{right:16px}.nav-arrow:hover{border-color:var(--accent-green);background:rgba(16,185,129,.25);color:white;transform:translateY(-50%) scale(1.05)}
+        .fragment-counter{position:fixed;top:22px;right:142px;z-index:9999;height:38px;padding:0 14px;display:none;align-items:center;justify-content:center;border-radius:20px;border:1px solid var(--glass-border);background:rgba(10,26,10,.65);backdrop-filter:blur(10px);color:rgba(255,255,255,.9);font-family:'Consolas',monospace;font-size:.85em;font-weight:700;letter-spacing:1px;box-shadow:0 4px 16px rgba(0,0,0,.3);white-space:nowrap}.fragment-counter.has-fragments{display:flex}.fragment-counter .fc-current{color:var(--accent-green)}
+        @media(max-width:768px){.grid-2,.grid-3{grid-template-columns:1fr}.reveal .slides section{padding:20px 30px}}
+        .glow-text{text-shadow:0 0 20px rgba(16,185,129,.5),0 0 40px rgba(245,158,11,.3)}.fade-in{animation:fadeIn .8s ease-out}@keyframes fadeIn{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+    </style>
+</head>
+<body>
+    <div class="fragment-counter" id="fragment-counter" title="Elementos de la diapositiva (mostrados/total)"><span class="fc-current">0</span>/<span class="fc-total">0</span></div>
+    <button class="nav-arrow nav-arrow-prev" id="nav-prev" title="Diapositiva anterior" aria-label="Diapositiva anterior"><i class="fa-solid fa-chevron-left"></i></button>
+    <button class="nav-arrow nav-arrow-next" id="nav-next" title="Diapositiva siguiente" aria-label="Diapositiva siguiente"><i class="fa-solid fa-chevron-right"></i></button>
+    <button class="index-btn" id="index-btn" title="Ir al índice de la unidad" aria-label="Ir al índice de la unidad"><i class="fa-solid fa-list-ul"></i></button>
+    <button class="fullscreen-btn" id="fullscreen-btn" title="Pantalla completa" aria-label="Pantalla completa"><i class="fa-solid fa-expand"></i></button>
+    <div class="slide-nav" id="slide-nav" title="Clic para ir a una diapositiva"><div class="slide-nav-display"><span class="slide-nav-current" id="slide-nav-current">1</span><span class="slide-nav-sep">/</span><span id="slide-nav-total">1</span></div><input type="number" class="slide-nav-input" id="slide-nav-input" min="1" placeholder=""></div>
+    <div class="reveal"><div class="slides">
+
+            <!-- ========== PORTADA ========== -->
+            <section class="title-slide" data-background-gradient="linear-gradient(135deg, #0a1a0a 0%, #0f2f1a 50%, #1a3a2a 100%)">
+                <span class="unit-badge">Unidad 2</span>
+                <h1 style="margin-top: 30px;">Axiología y Ética</h1>
+                <p class="subtitle">Ética y Valores I — Bloque 2</p>
+                <div style="margin-top:30px;">
+                    <a href="unidad-01-etica-disciplina-filosofica.html" style="text-decoration:none;"><span class="unit-badge" style="cursor:pointer;background:rgba(255,255,255,.1);">Volver a Unidad 1</span></a>
+                    <a href="unidad-03-la-etica-en-diversos-contextos.html" style="text-decoration:none;"><span class="unit-badge" style="cursor:pointer;margin-left:8px;">Ir a Unidad 3 →</span></a>
+                </div>
+                <p style="color:rgba(255,255,255,.4);font-size:.7em;margin-top:40px;">
+                    <i class="fa-solid fa-user-tie"></i> Lic. Rosalba Sosa Guízar<br>
+                    <i class="fa-solid fa-building-columns"></i> Instituto Leonardo Bravo
+                </p>
+            </section>
+
+            <!-- ========== ÍNDICE ========== -->
+            <section id="indice" data-background-color="#0a1a0a">
+                <h2><span class="icon-lg">📋</span> Índice de la Unidad</h2>
+                <div class="grid-2" style="font-size:.75em;">
+                    <div>
+                        <a href="#/sec-axiologia" style="text-decoration:none;"><div class="card card-accent-green" style="padding:8px 12px;margin:4px 0;cursor:pointer;"><i class="fa-solid fa-circle" style="font-size:.5em;vertical-align:middle;margin-right:6px;"></i> ¿Qué es la Axiología?</div></a>
+                        <a href="#/sec-valoracion" style="text-decoration:none;"><div class="card card-accent-gold" style="padding:8px 12px;margin:4px 0;cursor:pointer;"><i class="fa-solid fa-circle" style="font-size:.5em;vertical-align:middle;margin-right:6px;"></i> La valoración</div></a>
+                        <a href="#/sec-virtud" style="text-decoration:none;"><div class="card card-accent-blue" style="padding:8px 12px;margin:4px 0;cursor:pointer;"><i class="fa-solid fa-circle" style="font-size:.5em;vertical-align:middle;margin-right:6px;"></i> Virtud y valores universales</div></a>
+                        <a href="#/sec-juicios" style="text-decoration:none;"><div class="card card-accent-purple" style="padding:8px 12px;margin:4px 0;cursor:pointer;"><i class="fa-solid fa-circle" style="font-size:.5em;vertical-align:middle;margin-right:6px;"></i> Juicios valorativos</div></a>
+                        <a href="#/sec-jerarquia" style="text-decoration:none;"><div class="card card-accent-pink" style="padding:8px 12px;margin:4px 0;cursor:pointer;"><i class="fa-solid fa-circle" style="font-size:.5em;vertical-align:middle;margin-right:6px;"></i> Jerarquía de valores</div></a>
+                    </div>
+                    <div>
+                        <a href="#/sec-actos" style="text-decoration:none;"><div class="card card-accent-orange" style="padding:8px 12px;margin:4px 0;cursor:pointer;"><i class="fa-solid fa-circle" style="font-size:.5em;vertical-align:middle;margin-right:6px;"></i> Tipos de actos morales</div></a>
+                        <a href="#/sec-codigos" style="text-decoration:none;"><div class="card card-accent-red" style="padding:8px 12px;margin:4px 0;cursor:pointer;"><i class="fa-solid fa-circle" style="font-size:.5em;vertical-align:middle;margin-right:6px;"></i> Códigos morales del pasado</div></a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ============================================================ -->
+            <!-- SECCIÓN 1: QUÉ ES LA AXIOLOGÍA -->
+            <!-- ============================================================ -->
+            <section class="section-header" id="sec-axiologia">
+                <span class="section-icon">⚖️</span>
+                <h2>¿Qué es la Axiología?</h2>
+                <p style="color:rgba(255,255,255,.5);">La disciplina filosófica de los valores</p>
+            </section>
+
+            <section data-background-color="#0a1a0a">
+                <h2><span class="icon-lg">📖</span> Estudio de caso: El demonio</h2>
+                <div class="quote-box"><div class="quote-text" style="font-size:.78em;">"Cada uno de nosotros ha encontrado en su vida un demonio que quiso destruir su confianza en el hombre, que intentó convencerlo de que el desinterés es imposible. El demonio me invitaba para hablarme de la bajeza de los hombres y explicarme que el amor, la amistad y todos los nobles sentimientos habían sido inventados por literatos que, en su vida privada, eran canallas tan grandes como los otros."</div><div class="quote-author">Evgueni Evtushenko — Autobiografía precoz</div></div>
+                <div class="real-life fragment" style="margin-top:12px;"><div class="rl-label">Reflexión</div><p style="font-size:.82em;">Evtushenko relata cómo un "demonio" intentó convencerlo de que los hombres son egoístas y que el amor es una farsa. Sin embargo, tras una experiencia desafortunada, encontró a personas bondadosas que le devolvieron la confianza. <strong>¿Los valores dependen de nuestra experiencia o existen independientemente de nosotros?</strong></p></div>
+            </section>
+
+            <section data-background-color="#0a1a0a">
+                <h2><span class="icon-lg">⚖️</span> Definición de Axiología</h2>
+                <div class="definition-box"><div class="def-title">Axiología</div><div class="def-text">Disciplina filosófica surgida en el siglo XIX que tiene como objetivo principal determinar la <strong>naturaleza y el carácter del valor</strong> y de los juicios valorativos.</div></div>
+                <div class="card card-accent-green fragment" style="margin-top:10px;"><h4 style="color:var(--accent-green);">📖 Etimología</h4><p style="font-size:.85em;"><span class="highlight-gold">axios</span> = "valor" &nbsp;+&nbsp; <span class="highlight-gold">logos</span> = "tratado"</p></div>
+            </section>
+
+            <section data-background-color="#0a1a0a">
+                <h2><span class="icon-lg">📊</span> Tipos de valores</h2>
+                <table class="comparison-table fragment">
+                    <tr><th>Tipo</th><th>Ciencia</th><th>Meta</th><th>Términos</th></tr>
+                    <tr><td>Económicos</td><td>Economía</td><td>Utilidad</td><td>Ahorro, inversión, ganancia, costo</td></tr>
+                    <tr><td>Estéticos</td><td>Estética</td><td>Belleza</td><td>Arte, creatividad, sensibilidad</td></tr>
+                    <tr><td>Intelectuales</td><td>Ciencia</td><td>Verdad</td><td>Saber, racionalidad, juicio crítico</td></tr>
+                    <tr><td>Religiosos</td><td>Teología</td><td>Trascendencia</td><td>Fe, esperanza, coherencia</td></tr>
+                    <tr><td>Sociales</td><td>Sociología</td><td>Bien social</td><td>Solidaridad, generosidad</td></tr>
+                    <tr><td>Políticos</td><td>Ciencia Política</td><td>Poder</td><td>Consenso, diálogo, bien común</td></tr>
+                    <tr><td>Éticos</td><td>Ética</td><td>Bien moral</td><td>Honestidad, compasión, libertad</td></tr>
+                </table>
+            </section>
+
+            <!-- ============================================================ -->
+            <!-- SECCIÓN 2: LA VALORACIÓN -->
+            <!-- ============================================================ -->
+            <section class="section-header" id="sec-valoracion">
+                <span class="section-icon">🔍</span>
+                <h2>La valoración</h2>
+                <p style="color:rgba(255,255,255,.5);">Cómo juzgamos lo valioso</p>
+            </section>
+
+            <section data-background-color="#0a1a0a">
+                <h2><span class="icon-lg">🔍</span> ¿Qué es la valoración?</h2>
+                <div class="definition-box"><div class="def-title">Valoración</div><div class="def-text">Actividad propia del ser humano que consiste en la emisión de un <strong>juicio de valor</strong>, mediante el cual se califica a un sujeto o una acción con base en un criterio.</div></div>
+                <div class="grid-2" style="margin-top:12px;">
+                    <div class="card card-accent-green fragment"><h4 style="color:var(--accent-green);">✅ Valoración</h4><p style="font-size:.82em;">Positiva: afirma que posee cualidades valiosas.<br><em>"¡Qué estupenda función de teatro!"</em></p></div>
+                    <div class="card card-accent-red fragment"><h4 style="color:var(--accent-red);">❌ Desvaloración</h4><p style="font-size:.82em;">Negativa: afirma que no posee grandes cualidades.<br><em>"¡No había escuchado una canción tan horrible!"</em></p></div>
+                </div>
+                <div class="card card-accent-blue fragment" style="margin-top:12px;"><h4 style="color:var(--accent-blue);">🎯 ¿Qué puedo valorar?</h4><p style="font-size:.82em;">Prácticamente todo: objetos, situaciones, personas, uno mismo. Ejemplos: <em>"Esa rosa es hermosa"</em> (objetos), <em>"Juan es muy sincero"</em> (personas).</p></div>
+            </section>
+
+            <section data-background-color="#0a1a0a">
+                <h2><span class="icon-lg">🎯</span> Aspectos de la valoración</h2>
+                <div class="grid-2">
+                    <div class="card card-accent-blue fragment"><h4 style="color:var(--accent-blue);">Subjetivo</h4><p style="font-size:.82em;">Cada persona percibe y juzga según su experiencia. Ninguna persona puede decir a otra que no debió haber valorado así.</p></div>
+                    <div class="card card-accent-gold fragment"><h4 style="color:var(--accent-gold);">Objetivo</h4><p style="font-size:.82em;">Se hace a partir de características específicas. Ejemplo: para calificar un clavado se usa una lista de cotejo con criterios.</p></div>
+                </div>
+                <div class="fun-fact fragment" style="margin-top:12px;"><div class="ff-label">🎯 Juicio de experto</div><p style="font-size:.82em;">Una persona con gran acervo de conocimientos, habilidades y experiencia (como un mecánico de la NASA) puede emitir un juicio de valor más sólido que un principiante.</p></div>
+            </section>
+
+            <section data-background-color="#0a1a0a">
+                <h2><span class="icon-lg">💡</span> Ejemplo: El pastel</h2>
+                <div class="card card-accent-orange"><h4 style="color:var(--accent-orange);">Situación</h4><p style="font-size:.85em;">Juan: "¡Qué pastel tan rico! ¿No te gustó?"<br>Miguel: "No, me pareció muy dulce. Me empalagó."<br>Isela: "¿Estás loquito? Estuvo delicioso."</p></div>
+                <div class="card card-accent-green fragment" style="margin-top:10px;"><h4 style="color:var(--accent-green);">Conclusión</h4><p style="font-size:.85em;">Tal vez Miguel haya sido el único al que no le gustó; pero no por eso su juicio está equivocado. Cada quien percibe y juzga según su experiencia. Para los demás estuvo delicioso, aunque a él subjetivamente no le mereció más valor que el de regular.</p></div>
+            </section>
+
+            <!-- ============================================================ -->
+            <!-- SECCIÓN 3: UNIVERSALIDAD Y RELATIVIDAD -->
+            <!-- ============================================================ -->
+            <section data-background-color="#0a1a0a">
+                <h2><span class="icon-lg">🌍</span> Universalidad y relatividad</h2>
+                <div class="grid-2">
+                    <div class="card card-accent-green fragment"><h4 style="color:var(--accent-green);">Universalidad</h4><p style="font-size:.82em;">Valorar es propio del ser humano, en <strong>todas las culturas</strong>, en todas las épocas y en cualquier circunstancia. Nuestra racionalidad nos permite distinguir lo valioso de lo carente de valor.</p></div>
+                    <div class="card card-accent-orange fragment"><h4 style="color:var(--accent-orange);">Relatividad</h4><p style="font-size:.82em;">Cada pueblo y persona realizan sus elecciones de manera particular. No existe algo en lo que todos coincidan como el mayor valor. Las circunstancias cambian el valor de los bienes.</p></div>
+                </div>
+            </section>
+
+            <!-- ============================================================ -->
+            <!-- SECCIÓN 4: OBJETIVISMO Y SUBJETIVISMO -->
+            <!-- ============================================================ -->
+            <section data-background-color="#0a1a0a">
+                <h2><span class="icon-lg">⚖️</span> Objetivismo vs. Subjetivismo</h2>
+                <div class="grid-2">
+                    <div class="card card-accent-blue fragment">
+                        <h4 style="color:var(--accent-blue);">Objetivismo axiológico</h4>
+                        <p style="font-size:.8em;">Los objetos tienen valor <strong>por sí mismos</strong>, en sus cualidades, independientemente de los gustos de las personas.</p>
+                        <div class="quote-box" style="margin-top:8px;"><div class="quote-text" style="font-size:.75em;">"Los valores existen en sí y por sí, independientemente de que sean percibidos."</div><div class="quote-author">Max Scheler</div></div>
+                    </div>
+                    <div class="card card-accent-pink fragment">
+                        <h4 style="color:var(--accent-pink);">Subjetivismo axiológico</h4>
+                        <p style="font-size:.8em;">Las cosas valen porque <strong>las personas les dan valor</strong>. El sujeto que valora es quien les da aprecio.</p>
+                        <div class="quote-box" style="margin-top:8px;"><div class="quote-text" style="font-size:.75em;">"Una cosa tiene valor cuando es objeto de un interés, cualquiera que sea."</div><div class="quote-author">Ralph B. Perry</div></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ============================================================ -->
+            <!-- SECCIÓN 5: HARTMAN -->
+            <!-- ============================================================ -->
+            <section data-background-color="#0a1a0a">
+                <h2><span class="icon-lg">🧠</span> La axiología de Hartman</h2>
+                <div class="card card-accent-purple"><p style="font-size:.85em;"><strong>Robert S. Hartman</strong> (1910-1973): Nació en Alemania, falleció en la Ciudad de México. Profesor de la UNAM. Dedicó su vida al estudio de los valores.</p></div>
+                <div class="definition-box fragment" style="margin-top:12px;"><div class="def-title">Idea central</div><div class="def-text">Algo vale en la medida en que <strong>cumple con las cualidades de su concepto de clase</strong>. A mayor número de cualidades, mayor valor.</div></div>
+                <div class="card card-accent-green fragment" style="margin-top:10px;"><h4 style="color:var(--accent-green);">👤 Valor de las personas</h4><p style="font-size:.82em;">No se compara con nada, pues cada individuo es único. El valor de las personas es <strong>único, incomparable e irremplazable</strong>.</p></div>
+            </section>
+
+            <!-- ============================================================ -->
+            <!-- SECCIÓN 6: VALORES UNIVERSALES -->
+            <!-- ============================================================ -->
+            <section data-background-color="#0a1a0a">
+                <h2><span class="icon-lg">🌟</span> Valores universales</h2>
+                <div class="definition-box"><div class="def-title">Valores universales</div><div class="def-text">Son las aspiraciones o ideales a los que la mayoría de la humanidad asigna gran importancia, pues a través de su logro la humanidad mejora.</div></div>
+                <div class="grid-3 fragment" style="margin-top:14px;">
+                    <div class="card card-accent-green" style="text-align:center;"><div style="font-size:1.5em;">☮️</div><h4 style="color:var(--accent-green);font-size:.8em;">Paz</h4></div>
+                    <div class="card card-accent-gold" style="text-align:center;"><div style="font-size:1.5em;">🗽</div><h4 style="color:var(--accent-gold);font-size:.8em;">Libertad</h4></div>
+                    <div class="card card-accent-blue" style="text-align:center;"><div style="font-size:1.5em;">⚖️</div><h4 style="color:var(--accent-blue);font-size:.8em;">Justicia</h4></div>
+                </div>
+                <p class="fragment" style="font-size:.8em;margin-top:12px;color:rgba(255,255,255,.7);text-align:center;">Los valores se convierten en pautas de conducta vinculadas a la cultura, tradiciones y costumbres.</p>
+            </section>
+
+            <!-- ============================================================ -->
+            <!-- SECCIÓN 7: REALIZACIÓN Y VIRTUD -->
+            <!-- ============================================================ -->
+            <section class="section-header" id="sec-virtud">
+                <span class="section-icon">💎</span>
+                <h2>Realización de valores y virtud</h2>
+                <p style="color:rgba(255,255,255,.5);">Vivir los valores en la vida diaria</p>
+            </section>
+
+            <section data-background-color="#0a1a0a">
+                <h2><span class="icon-lg">💎</span> La realización de los valores</h2>
+                <div class="card card-accent-gold"><p style="font-size:.85em;">Los valores son abstracciones. Si se quedan en meras ideas no resultan tan útiles. Lo verdaderamente importante es <strong>vivir los valores</strong> en nuestras vidas.</p></div>
+                <div class="card card-accent-green fragment" style="margin-top:10px;"><h4 style="color:var(--accent-green);">🔑 Interiorizar los valores</h4><p style="font-size:.82em;">Cuando tomamos la decisión de que formen parte de nosotros. Con el tiempo, esa práctica se vuelve habitual y se expresa en el entorno social.</p></div>
+            </section>
+
+            <section data-background-color="#0a1a0a">
+                <h2><span class="icon-lg">🏃</span> Historia de Baker</h2>
+                <div class="quote-box"><div class="quote-text" style="font-size:.78em;">"¿Estoy haciendo lo más que puedo?" Baker se preguntó a mitad de la carrera. Fijó la mirada en la espalda del corredor que tenía inmediatamente delante de sí y desechó cualquier otro pensamiento. Una insospechada reserva de energía le recorrió el cuerpo. Haciendo caso omiso de la fatiga, sostuvo el furioso paso hasta cruzar la meta.</div><div class="quote-author">Reader's Digest — La historia de Baker</div></div>
+                <div class="real-life fragment" style="margin-top:12px;"><div class="rl-label">Realización de valor</div><p style="font-size:.82em;">Baker padecía cáncer huesos. En vez de rendirse, entrenó a corredoras. Cuando ya no pudo hacer algo práctico, eligió valores de actitud: «me pesa haber causado tantas molestias». Falleció el 26 de noviembre de 1970. Las corredoras vencieron a sus contrincantes diciendo: «En honor del entrenador Baker, quien nos enseñó lo que era enfrentarse a las dificultades de la vida».</p></div>
+            </section>
+
+            <section data-background-color="#0a1a0a">
+                <h2><span class="icon-lg">⭐</span> ¿Qué es la virtud?</h2>
+                <div class="definition-box"><div class="def-title">Virtud</div><div class="def-text">Disposición habitual a hacer el bien de manera permanente. Nadie nace virtuoso; es una práctica que se desarrolla con el tiempo.</div></div>
+                <h3 style="margin-top:14px;">Requisitos de la virtud</h3>
+                <div class="grid-3 fragment">
+                    <div class="card card-accent-green" style="text-align:center;"><div style="font-size:1.5em;">🧠</div><h4 style="color:var(--accent-green);font-size:.8em;">Conocimiento del bien</h4><p style="font-size:.7em;">Darse cuenta del valor moral del acto</p></div>
+                    <div class="card card-accent-gold" style="text-align:center;"><div style="font-size:1.5em;">❤️</div><h4 style="color:var(--accent-gold);font-size:.8em;">Amor al bien</h4><p style="font-size:.7em;">Estar convencido de su importancia</p></div>
+                    <div class="card card-accent-blue" style="text-align:center;"><div style="font-size:1.5em;">🕊️</div><h4 style="color:var(--accent-blue);font-size:.8em;">Libertad</h4><p style="font-size:.7em;">Acto producto de la libre determinación</p></div>
+                </div>
+            </section>
+
+            <section data-background-color="#0a1a0a">
+                <h2><span class="icon-lg">📜</span> Definiciones de virtud</h2>
+                <div class="quote-box fragment"><div class="quote-text">"La virtud es la costumbre de obedecer al deber, con inteligencia, amor y libertad."</div><div class="quote-author">Vargas Montoya</div></div>
+                <div class="quote-box fragment"><div class="quote-text">"La virtud es la fuerza moral que muestra la voluntad de un sujeto para cumplir con su deber."</div><div class="quote-author">Kant</div></div>
+                <div class="quote-box fragment"><div class="quote-text">"El hombre virtuoso es aquél que pone su felicidad en el bien."</div><div class="quote-author">Aristóteles</div></div>
+            </section>
+
+            <!-- ============================================================ -->
+            <!-- SECCIÓN 8: POLARIDAD -->
+            <!-- ============================================================ -->
+            <section data-background-color="#0a1a0a">
+                <h2><span class="icon-lg">🔄</span> Polaridad de los valores</h2>
+                <div class="definition-box"><div class="def-title">Polaridad</div><div class="def-text">Para cada valor existe un correspondiente <strong>antivalor</strong> (disvalor). Frente a lo valioso, tenemos lo que es poco valioso o carente de valor.</div></div>
+                <table class="comparison-table fragment" style="margin-top:14px;">
+                    <tr><th>Valor</th><th>Antivalor</th></tr>
+                    <tr><td>Belleza</td><td>Fealdad</td></tr>
+                    <tr><td>Santo</td><td>Profano</td></tr>
+                    <tr><td>Bueno</td><td>Malo</td></tr>
+                    <tr><td>Justo</td><td>Injusto</td></tr>
+                    <tr><td>Utilidad</td><td>Inutilidad</td></tr>
+                    <tr><td>Caridad</td><td>Egoísmo</td></tr>
+                </table>
+            </section>
+
+            <!-- ============================================================ -->
+            <!-- SECCIÓN 9: JUICIOS VALORATIVOS -->
+            <!-- ============================================================ -->
+            <section class="section-header" id="sec-juicios">
+                <span class="section-icon">📝</span>
+                <h2>Juicios valorativos</h2>
+                <p style="color:rgba(255,255,255,.5);">Axiología en acción</p>
+            </section>
+
+            <section data-background-color="#0a1a0a">
+                <h2><span class="icon-lg">📝</span> Tipos de juicios</h2>
+                <div class="grid-2">
+                    <div class="card card-accent-blue fragment">
+                        <h4 style="color:var(--accent-blue);">Juicio fáctico</h4>
+                        <p style="font-size:.8em;">Se refiere a un hecho o suceso de la realidad, <strong>sin calificarlo</strong>. Es propio de la ciencia.</p>
+                        <p style="font-size:.75em;color:var(--accent-gold);margin-top:6px;"><em>"El volcán hizo erupción"</em></p>
+                    </div>
+                    <div class="card card-accent-green fragment">
+                        <h4 style="color:var(--accent-green);">Juicio de valor</h4>
+                        <p style="font-size:.8em;">Califica al sujeto usando <strong>términos valorativos</strong> (útil, justo, bueno, honesto).</p>
+                        <p style="font-size:.75em;color:var(--accent-gold);margin-top:6px;"><em>"Juan es un ciudadano positivo"</em></p>
+                    </div>
+                </div>
+                <div class="card card-accent-gold fragment" style="margin-top:12px;"><h4 style="color:var(--accent-gold);">Fórmula</h4><p style="font-size:.85em;text-align:center;"><strong>S es P</strong> &nbsp;(Sujeto — nexo — Predicado)</p></div>
+            </section>
+
+            <section data-background-color="#0a1a0a">
+                <h2><span class="icon-lg">🧩</span> Elementos del juicio moral</h2>
+                <div class="grid-2">
+                    <div class="card card-accent-green fragment" style="text-align:center;"><div style="font-size:1.5em;">1️⃣</div><h4 style="color:var(--accent-green);font-size:.8em;">Hecho</h4><p style="font-size:.72em;">La acción moral que alguien realiza</p></div>
+                    <div class="card card-accent-gold fragment" style="text-align:center;"><div style="font-size:1.5em;">2️⃣</div><h4 style="color:var(--accent-gold);font-size:.8em;">Criterio</h4><p style="font-size:.72em;">La base para emitir un juicio</p></div>
+                    <div class="card card-accent-blue fragment" style="text-align:center;"><div style="font-size:1.5em;">3️⃣</div><h4 style="color:var(--accent-blue);font-size:.8em;">Valor</h4><p style="font-size:.72em;">Lo que se asigna al acto</p></div>
+                    <div class="card card-accent-purple fragment" style="text-align:center;"><div style="font-size:1.5em;">4️⃣</div><h4 style="color:var(--accent-purple);font-size:.8em;">Justificación</h4><p style="font-size:.72em;">La fundamentación del juicio</p></div>
+                </div>
+            </section>
+
+            <!-- ============================================================ -->
+            <!-- SECCIÓN 10: JERARQUÍA -->
+            <!-- ============================================================ -->
+            <section class="section-header" id="sec-jerarquia">
+                <span class="section-icon">📊</span>
+                <h2>Jerarquía de valores</h2>
+                <p style="color:rgba(255,255,255,.5);">Escalas de Scheler y Maslow</p>
+            </section>
+
+            <section data-background-color="#0a1a0a">
+                <h2><span class="icon-lg">📊</span> Escala de Max Scheler</h2>
+                <p style="font-size:.8em;color:rgba(255,255,255,.7);margin-bottom:10px;">De menor a mayor importancia:</p>
+                <div class="timeline">
+                    <div class="timeline-item fragment"><div class="year">1. AGRADO</div><div class="event">dulce — amargo</div></div>
+                    <div class="timeline-item fragment"><div class="year">2. VITALES</div><div class="event">sano — enfermo</div></div>
+                    <div class="timeline-item fragment"><div class="year">3. ESPIRITUALES</div><div class="event">Estéticos: bello-feo &nbsp;|&nbsp; Jurídicos: justo-injusto &nbsp;|&nbsp; Intelectuales: verdadero-falso</div></div>
+                    <div class="timeline-item fragment"><div class="year">4. RELIGIOSOS</div><div class="event">santo — profano</div></div>
+                </div>
+            </section>
+
+            <section data-background-color="#0a1a0a">
+                <h2><span class="icon-lg">🔺</span> Pirámide de Maslow</h2>
+                <div style="text-align:center;">
+                    <div class="card card-accent-gold fragment" style="max-width:200px;margin:0 auto;"><h4 style="color:var(--accent-gold);font-size:.8em;">⭐ Autorrealización</h4></div>
+                    <p class="fragment" style="font-size:1.2em;color:var(--accent-gold);">▲</p>
+                    <div class="card card-accent-purple fragment" style="max-width:260px;margin:0 auto;"><h4 style="color:var(--accent-purple);font-size:.8em;">🏆 Reconocimiento / Estima</h4></div>
+                    <p class="fragment" style="font-size:1.2em;color:var(--accent-purple);">▲</p>
+                    <div class="card card-accent-pink fragment" style="max-width:320px;margin:0 auto;"><h4 style="color:var(--accent-pink);font-size:.8em;">🤝 Afiliación</h4></div>
+                    <p class="fragment" style="font-size:1.2em;color:var(--accent-pink);">▲</p>
+                    <div class="card card-accent-blue fragment" style="max-width:380px;margin:0 auto;"><h4 style="color:var(--accent-blue);font-size:.8em;">🔒 Seguridad</h4></div>
+                    <p class="fragment" style="font-size:1.2em;color:var(--accent-blue);">▲</p>
+                    <div class="card card-accent-green fragment" style="max-width:440px;margin:0 auto;"><h4 style="color:var(--accent-green);font-size:.8em;">🍎 Necesidades fisiológicas</h4></div>
+                </div>
+                <p class="fragment" style="font-size:.7em;color:rgba(255,255,255,.5);text-align:center;margin-top:10px;">Necesidades de déficit (abajo) → Necesidades de desarrollo (arriba)</p>
+            </section>
+
+            <!-- ============================================================ -->
+            <!-- SECCIÓN 11: ACTOS MORALES -->
+            <!-- ============================================================ -->
+            <section class="section-header" id="sec-actos">
+                <span class="section-icon">🎭</span>
+                <h2>Tipos de actos morales</h2>
+                <p style="color:rgba(255,255,255,.5);">Morales, inmorales y amorales</p>
+            </section>
+
+            <section data-background-color="#0a1a0a">
+                <h2><span class="icon-lg">🎭</span> Los tres tipos de actos</h2>
+                <div class="grid-3">
+                    <div class="card card-accent-green fragment">
+                        <h4 style="color:var(--accent-green);text-align:center;">✅ Morales</h4>
+                        <p style="font-size:.78em;">Benefician a otros o reconocen la dignidad humana.</p>
+                        <p style="font-size:.72em;color:var(--accent-gold);margin-top:6px;"><em>Perdonar, amar, hacer justicia, buscar la paz</em></p>
+                    </div>
+                    <div class="card card-accent-red fragment">
+                        <h4 style="color:var(--accent-red);text-align:center;">❌ Inmorales</h4>
+                        <p style="font-size:.78em;">Violan normas morales; dañan, lastiman u ofenden la dignidad.</p>
+                        <p style="font-size:.72em;color:var(--accent-gold);margin-top:6px;"><em>Matar, robar, defraudar, insultar</em></p>
+                    </div>
+                    <div class="card card-accent-purple fragment">
+                        <h4 style="color:var(--accent-purple);text-align:center;">⚪ Amorales</h4>
+                        <p style="font-size:.78em;">Sin libertad, conciencia o voluntad para decidir.</p>
+                        <p style="font-size:.72em;color:var(--accent-gold);margin-top:6px;"><em>Actuar por instinto o discapacidad racional</em></p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- ============================================================ -->
+            <!-- SECCIÓN 12: CÓDIGOS MORALES -->
+            <!-- ============================================================ -->
+            <section class="section-header" id="sec-codigos">
+                <span class="section-icon">📜</span>
+                <h2>Códigos morales del pasado</h2>
+                <p style="color:rgba(255,255,255,.5);">Hammurabi, Caballería y Mexicas</p>
+            </section>
+
+            <section data-background-color="#0a1a0a">
+                <h2><span class="icon-lg">🏛️</span> Código de Hammurabi</h2>
+                <div class="card card-accent-gold"><p style="font-size:.85em;"><strong>Hammurabi</strong> reinó en Babilonia (1792-1750 a.C.). Creó una lista de <strong>282 leyes</strong> grabadas en un pilar de diorita negra de 2.5 metros.</p></div>
+                <div class="definition-box fragment" style="margin-top:10px;"><div class="def-title">Ley del Talión</div><div class="def-text">"Ojo por ojo": la pena debe ser la misma que el daño causado.</div></div>
+                <div class="card card-accent-red fragment" style="margin-top:10px;"><h4 style="color:var(--accent-red);">Algunos preceptos</h4><ul style="font-size:.78em;"><li>Si un hijo golpea a su padre → se le corta la mano</li><li>Si alguien roba y es atrapado → será ejecutado</li><li>Si un hombre reventó el ojo de otro → se le reventará el suyo</li></ul></div>
+            </section>
+
+            <section data-background-color="#0a1a0a">
+                <h2><span class="icon-lg">⚔️</span> Código medieval (Caballería)</h2>
+                <div class="card card-accent-purple"><p style="font-size:.85em;">La caballería era una práctica moral y social reservada a los señores feudales. Se regulaba por normativa jurídica basada en la costumbre.</p></div>
+                <div class="card card-accent-green fragment" style="margin-top:10px;"><h4 style="color:var(--accent-green);">Los diez mandamientos</h4><ul style="font-size:.75em;"><li>Defenderás las enseñanzas de la Iglesia</li><li>Respetarás a las personas débiles e indefensas</li><li>No retrocederás ante el enemigo</li><li>Respetarás el honor de las mujeres</li><li>Nunca mentirás y serás fiel a tu palabra</li><li>Serás generoso con todos</li><li>Serás siempre el campeón de lo correcto</li></ul></div>
+            </section>
+
+            <section data-background-color="#0a1a0a">
+                <h2><span class="icon-lg">🪶</span> Código prehispánico (Mexicas)</h2>
+                <div class="card card-accent-orange"><p style="font-size:.85em;">Los mexicas tenían una disciplina muy rígida con normas de conducta rigurosas y castigos severos. La conservación del pueblo estaba por encima de las preferencias particulares.</p></div>
+                <div class="grid-2 fragment" style="margin-top:10px;">
+                    <div class="card card-accent-red"><h4 style="color:var(--accent-red);font-size:.85em;">Castigos severos</h4><ul style="font-size:.73em;"><li>No robo → muerte (grave) o azotes (menor)</li><li>No matar → muerte inmediata</li><li>No adulterio → muerte</li><li>No traicionar → muerte</li></ul></div>
+                    <div class="card card-accent-green"><h4 style="color:var(--accent-green);font-size:.85em;">Normas principales</h4><ul style="font-size:.73em;"><li>No emborracharse (jóvenes)</li><li>No alterar el orden público</li><li>No incesto</li><li>Respetar a la familia</li></ul></div>
+                </div>
+            </section>
+
+            <section data-background-color="#0a1a0a">
+                <h2><span class="icon-lg">💌</span> Carta de un padre a su hijo</h2>
+                <div class="quote-box"><div class="quote-text" style="font-size:.82em;">"Hijo mío, nacido y criado en el mundo por Dios... Reverencia y saluda a los mayores, no olvidando los menores; no seas niño mudo; consuela a los afligidos con buenas palabras. A todos honra y más a tus padres, a los cuales debes obediencia, servicio y reverencia..."</div><div class="quote-author">Códice Florentino — Exhorto de un padre mexica a su hijo</div></div>
+                <div class="real-life fragment" style="margin-top:12px;"><div class="rl-label">Contexto</div><p style="font-size:.82em;">Estas cartas se encuentran en el Códice Florentino (Historia general de las cosas de Nueva España). Se caracterizan por la dulzura y el cariño con el que se hablaba a los hijos.</p></div>
+            </section>
+
+            <!-- ============================================================ -->
+            <!-- CIERRE -->
+            <!-- ============================================================ -->
+            <section class="section-header" id="sec-cierre">
+                <span class="section-icon">✨</span>
+                <h2>Síntesis de la Unidad</h2>
+                <p style="color:rgba(255,255,255,.5);">Axiología y Ética</p>
+            </section>
+
+            <section data-background-color="#0a1a0a">
+                <h2><span class="icon-lg">📌</span> Recapitulación</h2>
+                <div class="grid-2">
+                    <div class="card card-accent-green"><h4 style="color:var(--accent-green);">Axiología</h4><p style="font-size:.78em;">Estudio de los valores. Objetivismo vs. Subjetivismo. Hartman.</p></div>
+                    <div class="card card-accent-gold"><h4 style="color:var(--accent-gold);">Valoración</h4><p style="font-size:.78em;">Juicios de valor. Aspectos subjetivo y objetivo.</p></div>
+                    <div class="card card-accent-blue"><h4 style="color:var(--accent-blue);">Virtud</h4><p style="font-size:.78em;">Disposición habitual a hacer el bien. Conocimiento + Amor + Libertad.</p></div>
+                    <div class="card card-accent-purple"><h4 style="color:var(--accent-purple);">Actos morales</h4><p style="font-size:.78em;">Morales, inmorales, amorales.</p></div>
+                    <div class="card card-accent-pink"><h4 style="color:var(--accent-pink);">Jerarquía</h4><p style="font-size:.78em;">Scheler (4 niveles) y Maslow (pirámide de necesidades).</p></div>
+                    <div class="card card-accent-orange"><h4 style="color:var(--accent-orange);">Códigos del pasado</h4><p style="font-size:.78em;">Hammurabi, Caballería, Mexicas.</p></div>
+                </div>
+            </section>
+
+            <section data-background-color="#0a1a0a">
+                <h2><span class="icon-lg">💬</span> Citas para recordar</h2>
+                <div class="quote-box fragment"><div class="quote-text">"Los valores existen en sí y por sí, independientemente de que sean percibidos."</div><div class="quote-author">Max Scheler</div></div>
+                <div class="quote-box fragment"><div class="quote-text">"La virtud es la costumbre de obedecer al deber, con inteligencia, amor y libertad."</div><div class="quote-author">Vargas Montoya</div></div>
+                <div class="quote-box fragment"><div class="quote-text">"Cuando una persona no puede realizar más valores en su vida, entonces adopta valores de actitud."</div><div class="quote-author">Víctor Frankl</div></div>
+            </section>
+
+            <section class="title-slide" data-background-gradient="linear-gradient(135deg, #0a1a0a 0%, #0f2f1a 50%, #1a3a2a 100%)">
+                <h1 style="font-size:2em;">Fin de la Unidad 2</h1>
+                <p class="subtitle">Axiología y Ética</p>
+                <div style="margin-top:30px;">
+                    <a href="unidad-01-etica-disciplina-filosofica.html" style="text-decoration:none;"><span class="unit-badge" style="cursor:pointer;margin:5px;">Volver a Unidad 1</span></a>
+                    <a href="unidad-03-la-etica-en-diversos-contextos.html" style="text-decoration:none;"><span class="unit-badge" style="cursor:pointer;margin:5px;">Ir a Unidad 3 →</span></a>
+                </div>
+                <p style="color:rgba(255,255,255,.4);font-size:.7em;margin-top:40px;">
+                    <i class="fa-solid fa-user-tie"></i> Lic. Rosalba Sosa Guízar<br>
+                    <i class="fa-solid fa-building-columns"></i> Instituto Leonardo Bravo
+                </p>
+            </section>
+
+    </div></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+    <script>
+        Reveal.initialize({
+            hash: true,
+            slideNumber: false,
+            controls: true,
+            progress: true,
+            center: true,
+            transition: 'slide',
+            width: 1200,
+            height: 700,
+            margin: 0.04,
+            plugins: []
+        });
+
+        const slideNav=document.getElementById('slide-nav'),slideNavCurrent=document.getElementById('slide-nav-current'),slideNavTotal=document.getElementById('slide-nav-total'),slideNavInput=document.getElementById('slide-nav-input');
+        Reveal.on('ready',()=>{slideNavTotal.textContent=Reveal.getTotalSlides();slideNavCurrent.textContent=Reveal.getIndices().h+1;updateFragmentCounter()});
+        Reveal.on('slidechanged',e=>{slideNavCurrent.textContent=e.indexh+1;updateFragmentCounter()});
+        slideNav.addEventListener('click',()=>{slideNav.classList.add('editing');slideNavInput.value='';slideNavInput.focus()});
+        slideNavInput.addEventListener('keydown',e=>{if(e.key==='Enter'){const n=parseInt(slideNavInput.value);if(!isNaN(n)&&n>=1&&n<=Reveal.getTotalSlides()){Reveal.slide(n-1)}slideNav.classList.remove('editing')}if(e.key==='Escape'){slideNav.classList.remove('editing')}});
+        slideNavInput.addEventListener('blur',()=>{slideNav.classList.remove('editing')});
+        document.getElementById('fullscreen-btn').addEventListener('click',()=>{if(!document.fullscreenElement){document.documentElement.requestFullscreen()}else{document.exitFullscreen()}});
+        document.getElementById('index-btn').addEventListener('click',()=>window.location.hash='#/indice');
+        document.getElementById('nav-prev').addEventListener('click',()=>Reveal.prev());
+        document.getElementById('nav-next').addEventListener('click',()=>Reveal.next());
+
+        const fc=document.getElementById('fragment-counter'),fcCurrent=fc.querySelector('.fc-current'),fcTotal=fc.querySelector('.fc-total');
+        function updateFragmentCounter(){const sl=Reveal.getCurrentSlide();const frags=sl.querySelectorAll('.fragment');if(frags.length>0){fc.classList.add('has-fragments');fcTotal.textContent=frags.length;let vis=0;frags.forEach(f=>{if(f.classList.contains('visible'))vis++});fcCurrent.textContent=vis}else{fc.classList.remove('has-fragments')}}
+        Reveal.on('fragmentshown',()=>updateFragmentCounter());Reveal.on('fragmenthidden',()=>updateFragmentCounter());
+    </script>
+</body>
+</html>
